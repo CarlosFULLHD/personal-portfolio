@@ -46,7 +46,7 @@ export default function RootLayout({
         )}
         style={{ zIndex: 0 }}
       >
-        <Providers themeProps={{ attribute: "class", defaultTheme: "light" }}>
+        <Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>
           {/* <div className="relative flex flex-col font-circular ">
             <Navbar />  
             <main className="relative bg-custom-background">{children}</main>

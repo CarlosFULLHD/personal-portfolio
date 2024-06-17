@@ -1,127 +1,173 @@
 import DetailedCard from "./components/DetailedCard";
-const cardsData = [
+
+const frontendCards = [
   {
     id: 1,
-    title: ` ⌛Estrategias Efectivas para dejar de desperdiciar tu tiempo`,
-    description: `
-                  - Guía de configuraciones paso a paso sobre cómo identificar y limitar las distracciones del celular.
-                  - Apps y recomendaciones para seguimiento semanal y monitorear el uso del celular.
-                  - El protocolo de seguimiento y retroalimentación de las personas exitosas.
-                  - Limita las redes sociales y obtén un balance sano para dejar de ser esclavo de las notificaciones.
-                  `,
+    title: "Next.js, React.js, TypeScript",
+    icon: "next-js.svg",
+    description:
+      "Extensive experience in building dynamic web applications using Next.js, React.js, and TypeScript. Proficient in consuming REST API endpoints, managing state, and modularizing code for better maintainability and scalability.",
+    lists: `
+      - Projects: Thesis Management System, Job Fair Platform
+      - Consuming REST API endpoints
+      - State management
+      - Code Modularization
+    `,
   },
-
-  {
-    id: 2,
-    title: `🏖️Como entretenerte de manera sana sin perder el control`,
-    description: `
-                  - Descubre el arte de entretenerte sin depender del celular, creando nuevos hábitos que enriquecen tu vida.
-                  - Sé más consciente de tus actividades de ocio y aprende a programarlas de manera efectiva para disfrutar plenamente de cada momento.
-                  - Aprende a descansar de manera sana, desconectando de las pantallas y reconectando con actividades que rejuvenecen mente y cuerpo.
-                  `,
-  },
-  {
-    id: 3,
-    title: `💬Como lidiar con los mensajes de manera efectiva para evitar mantenerte pegado al celular`,
-    description: `
-                  - Aprende a gestionar tus mensajes eficientemente, permitiéndote ser consciente de cómo y cuándo comunicarte.
-                  - Desarrolla habilidades para priorizar comunicaciones, asegurando que los mensajes importantes reciban la atención necesaria sin abrumarte.
-                  - Implementa estrategias para reducir el estrés asociado a las notificaciones, mejorando tu bienestar general y permitiéndote enfocarte en tareas esenciales.
-                  `,
-  },
-
   {
     id: 4,
-    title: `🩹Como Superar El Auto-Sabotaje y valorar tus Logros`,
-    description: `
-                  - Como dejar de autodespreciarte y empezar a quererse uno mismo 
-                  - Entiende el PORQUE del autodesprecio humano y el cómo dejar atrás el autosabotaje.
-                  - Cómo superar las barreras internas y escapar del ciclo de la culpa y perfeccionismo dañino.
-                  - Cómo obtener confianza en tus acciones, paso a paso hacia la mejor versión de ti con logros y satisfacción personal.
-                  `,
+    title: "Tailwind CSS",
+    icon: "tailwind-svgrepo-com.svg",
+    description:
+      "Skilled in using Tailwind CSS to create responsive and visually appealing user interfaces. Capable of styling applications from scratch and improving existing styles for better user experience.",
+    lists: `
+      - Responsive design
+      - CSS styling from scratch
+      - Dark and Light mode
+    `,
   },
+];
 
+const backendCards = [
   {
-    id: 5,
-    title: `❤️‍🔥Forjando un Legado de Impacto y sin arrepentimientos`,
-    description: `
-                  - Aprende cómo funciona tu IDENTIDAD, entendimiento psicológico y profundo de los VALORES, CREENCIAS que tenemos de nosotros mismos y autopercepciones.
-                  - Cambia tu identidad y dejar ir esa parte de ti para poder desarrollarte como una mejor persona.
-                  - Plantilla para crear una VISION y una ANTIVISION para tener direccion en tu vida.
-                  - Mejora la imagen de ti mismo para que empieces a reconstruir tu vida.
-                  - Cómo construir una nueva mentalidad resiliente ante las opiniones de las masas.
-                  - Una llamada a la madurez, valentía y a la responsabilidad personal hacia una vida con sentido y propósito.
-                  `,
+    id: 2,
+    title: "Spring Boot (Java)",
+    icon: "spring.svg",
+    description:
+      "Proficient in developing robust backend systems with Spring Boot. Experience includes building REST APIs, implementing layered architecture, and securing endpoints with JWT tokens and Spring Security. Currently expanding knowledge in microservices.",
+    lists: `
+      - Projects: Backend projects with REST API
+      - Layered Architecture
+      - Spring Security with JWT Tokens
+      - High Cohesion and Loose Coupling
+      - Password encryption
+      - Learning microservices
+    `,
   },
-  {
-    id: 6,
-    title: `🕵️‍♂️Descubriendo los Rasgos de la Personalidad y explotar todo su Potencial`,
-    description: `
-                  - Aprende la magia detrás de cada uno de tus RASGOS de tu personalidad.
-                  - Crea objetivos basados en tu personalidad y lo que te motivará hacia tu éxito futuro.
-                  - Aprende sobre las ventajas y desventajas de tu personalidad.
-                  - Cómo sacarle el mejor partido a tu personalidad y también cómo puedes influir en esos rasgos para una mejor vida.
-                  - Deja atrás las limitaciones o pensamiento extremista para poder sacar tu mejor potencial.
-                  `,
-  },
+];
+
+const devopsCards = [
   {
     id: 7,
-    title: `🦁Como matenerse disciplinado al igual que David Goggins y eliminar la procrastinación`,
-    description: `
-                  - Aprende a superar la procrastinación creando una visión negativa que te motive hacia adelante y una visión futura para obtener dirección y claridad de tu futuro deseado.
-                  - Aprende cómo las personas millonarias toman decisiones y se comprometen a su propósito.
-                  - Recuerda que un día dejarás este mundo y obtén valor para dejar algo detrás que te sientas orgulloso.
-                  - Aprende a liberarte de las ataduras para no salir de tu zona de confort y tampoco perderte en el burnout.
-                  - Aprende la mentalidad del estudiante de por vida y dejar atrás tu EGO para aprender de verdad.
-                  `,
+    title: "Docker",
+    icon: "docker-svgrepo-com.svg",
+    description:
+      "Expertise in using Docker for containerizing applications, running local databases, and creating Docker Compose files for microservices architecture. Skilled in building and managing Docker images.",
+    lists: `
+      - Running local project databases
+      - Creating Docker Compose files
+      - Managing Docker images
+    `,
   },
   {
     id: 8,
-    title: `🗿Construye el Historial de victorias que te desmuestre tu valor y te de confianza`,
-    description: `
-                  - Aprende a crear un historial que demuestre tu valía personal y genere confianza.
-                  - Aprende a aceptar a tu yo pasado y seguir un camino incluso si te encuentras en el peor momento de tu vida.
-                  - Encuentra propósito y significado en hacer sacrificios.
-                  - Entiende el HISTORIAL detrás de tí, aprecialo y ve a por mucho más.
-                  `,
+    title: "Jenkins",
+    icon: "jenkins-svgrepo-com.svg",
+    description:
+      "Experienced in setting up CI/CD pipelines using Jenkins. Developed pipelines for Spring Boot and Next.js applications, with deployments on Tomcat and Netlify.",
+    lists: `
+      - CI/CD pipeline creation
+      - Deployments on Tomcat and Netlify
+    `,
   },
   {
     id: 9,
-    title: `💎Como dejar amistades venenosas y el Arte de Construir Amistades que Perduran`,
-    description: `
-                  - Entiende la razón verdadera por la cual debes cuidarte a ti mismo y a tu familia.
-                  - Aprende porqué y cómo dejar atrás malas amistades y encontrar buenas amistades que te eleven y no te hundan.
-                  - Elimina las limitaciones mentales para conseguir nuevas amistades.
-                  - Aprende a convertirte en ese amigo en el cual puedes confiar.
-                  - Entiende el secreto para SUPERAR ese vacío entre antiguos amigos y NUEVAS AMISTADES
-                  `,
+    title: "Deployments",
+    icon: "server-minimalistic-svgrepo-com.svg",
+    description:
+      "Proficient in deploying applications on various platforms including Vercel, Netlify, and AWS. Knowledgeable in setting up automated CI/CD integration and deploying applications on VPS like Railway with NGINX for reverse proxy.",
+    lists: `
+      - Deployments on Vercel, Netlify, and AWS
+      - Automated CI/CD integration
+      - Deploying applications on VPS
+      - Using NGINX for reverse proxy
+    `,
   },
+];
+
+const Learning = [
   {
     id: 10,
-    title: `📅Como Mantener los hábitos a largo plazo con constancia incluso sin motivación`,
-    description: `
-                  - Crea, descubre y destruye hábitos, paso a paso.
-                  - Construye una vida llena de disciplina con sencillos pasos NO necesitas ACCION MASIVA.
-                  - Aprende cómo tener hábitos que no requieran fuerza de voluntad.
-                  - Aprende el ÚNICO ingrediente necesario para formar hábitos DE POR VIDA.
-                  - Motívate para poder seguir esos hábitos y continuarlos a pesar de la falta de disciplina.
-                  `,
+    title: "Currently Learning",
+    icon: "keycloak.svg",
+    description: "Learning these news technologies",
+    lists: `- React Query: State and cache management library for React.js
+- Spring Cloud
+- Keycloak: Security and authentication
+- Figma: Web design and styling`,
   },
-
-  // ... (agrega más cards aquí)
 ];
+
 export const ModulesSection = () => {
   return (
-    <section className="m-0 lg:max-w-3xl">
-      <div className=" mx-auto max-w-[1024px] p-1 sm:p-2 md:p-4 lg:p-8 rounded-lg">
-        <div className="">
-          {cardsData.map((card) => (
-            <DetailedCard
-              key={card.id}
-              title={card.title}
-              description={card.description}
-            />
-          ))}
+    <section className="m-0 lg:w-full ">
+      <h2 className="text-4xl lg:text-5xl font-bold text-center mb-4  text-yellow-dark px-4">
+        Abilities and Technologies:
+      </h2>
+      <div className="mx-auto max-w-[1024px] lg:max-w-6xl p-1 sm:p-2 md:p-4 lg:p-8 rounded-lg">
+        <div className="mb-8">
+          <h2 className="text-3xl font-bold mb-4 lg:text-3xl text-yellow-dark px-4">
+            Frontend:
+          </h2>
+          <div className="grid grid-cols-1 gap-1 m-0 lg:grid-cols-2 ">
+            {frontendCards.map((card) => (
+              <DetailedCard
+                key={card.id}
+                title={card.title}
+                icon={card.icon}
+                description={card.description}
+                lists={card.lists}
+              />
+            ))}
+          </div>
+        </div>
+        <div className="mb-8">
+          <h2 className="text-3xl font-bold mb-4 lg:text-3xl text-yellow-dark px-4">
+            Backend:
+          </h2>
+          <div className="grid grid-cols-1 gap-4">
+            {backendCards.map((card) => (
+              <DetailedCard
+                key={card.id}
+                title={card.title}
+                icon={card.icon}
+                description={card.description}
+                lists={card.lists}
+              />
+            ))}
+          </div>
+        </div>
+        <div className="mb-8">
+          <h2 className="text-3xl font-bold mb-4 lg:text-3xl text-yellow-dark px-4">
+            DevOps:
+          </h2>
+          <div className="grid grid-cols-1 gap-4 lg:grid-cols-2 ">
+            {devopsCards.map((card) => (
+              <DetailedCard
+                key={card.id}
+                title={card.title}
+                icon={card.icon}
+                description={card.description}
+                lists={card.lists}
+              />
+            ))}
+          </div>
+        </div>
+        <div className="mb-8">
+          <h2 className="text-3xl font-bold mb-4 lg:text-3xl text-yellow-dark px-4">
+            Currently Learning:
+          </h2>
+          <div className="grid grid-cols-1 ">
+            {Learning.map((card) => (
+              <DetailedCard
+                key={card.id}
+                title={card.title}
+                icon={card.icon}
+                description={card.description}
+                lists={card.lists}
+              />
+            ))}
+          </div>
         </div>
       </div>
     </section>

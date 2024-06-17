@@ -47,7 +47,7 @@ const config = {
         "custom-yellow": "#ffe17e",
         "custom-orange": "#F5A67E",
         "custom-gray": "#8992a6",
-        "custom-background": "#262d3b",
+        "custom-background": "#23272A",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
