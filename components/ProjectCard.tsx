@@ -11,6 +11,7 @@ import {
   ModalFooter,
   Button,
   useDisclosure,
+  Link,
 } from "@nextui-org/react";
 import {
   Carousel,
@@ -57,15 +58,13 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
         "
         >
           <Image
-            shadow="sm"
-            radius="lg"
             width="100%"
             alt={title}
-            className="w-full object-cover h-full"
+            className="w-full object-cover"
             src={image}
           />
         </CardBody>
-        <CardFooter className="text-small justify-between flex flex-col py-4">
+        <CardFooter className="text-small justify-between flex flex-col py-4 z-10">
           <h1 className="text-bold text-2xl">{title}</h1>
           <p className="text-default-500">{shortDescription}</p>
           <div className="flex flex-row pb-2 lg:pb-4">
@@ -125,7 +124,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
                 </CarouselThumbsContainer>
               </Carousel>
               <h2 className="text-bold text-md mt-4">Technologies:</h2>
-              <div className="flex space-x-2 ">
+              <div className="flex space-x-2">
                 {technologies.map((tech, index) => (
                   <Image
                     key={index}
@@ -144,14 +143,31 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
               </ul>
             </ModalBody>
             <ModalFooter>
-              <Button color="danger" variant="light" onClick={onClose}>
+              <Button
+                className="font-bold"
+                color="danger"
+                variant="bordered"
+                onClick={onClose}
+              >
                 Close
               </Button>
-              <Button as="a" href={githubLink} target="_blank" color="primary">
-                View GitHub
+              <Button
+                className="font-bold text-md"
+                as={Link}
+                href={githubLink}
+                target="_blank"
+                color="primary"
+              >
+                Github
               </Button>
-              <Button as="a" href={demoLink} target="_blank" color="primary">
-                View Demo
+              <Button
+                className="font-bold text-md"
+                as={Link}
+                href={demoLink}
+                target="_blank"
+                color="primary"
+              >
+                Demo
               </Button>
             </ModalFooter>
           </>

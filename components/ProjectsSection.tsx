@@ -34,7 +34,7 @@ const projects = [
     carouselImages: [
       "https://d1kdkr2pswehq6.cloudfront.net/encuentra_proposito.jpg",
       "https://d1kdkr2pswehq6.cloudfront.net/encuentra_proposito.jpg",
-      "https://d1kdkr2pswehq6.cloudfront.net/encuentra_proposito.jpg",
+      "https://d1kdkr2pswehq6.cloudfront.net/calnewport-img.webp",
     ],
     githubLink: "https://github.com/username/project1",
     demoLink: "https://project1.demo.com",
@@ -55,13 +55,13 @@ const projects = [
 
 export const ProjectsSection = () => {
   return (
-    <section className="m-0 lg:max-w-3xl self-center mt-8">
-      <div className="mx-auto max-w-[1024px] p-1 sm:p-2 md:p-4 lg:p-8 rounded-lg">
+    <section className="m-0  self-center mt-8 ">
+      <div className="mx-auto p-1 sm:p-2 md:p-4 lg:p-8 rounded-lg">
         <div className="mb-8">
           <h2 className="text-4xl font-bold mb-4 text-yellow-dark text-center">
             Key Projects:
           </h2>
-          <div className="grid grid-cols-1 gap-4 items-center">
+          <div className="grid grid-cols-1 gap-4 items-center lg:grid-cols-2 max-w-[1200px] mx-auto">
             {projects.map((project, index) => (
               <ProjectCard key={index} {...project} />
             ))}
@@ -70,12 +70,10 @@ export const ProjectsSection = () => {
 
         <div className="mb-8">
           <h2 className="text-2xl font-bold mb-4">Other Projects:</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            {projects
-              .filter((p) => p.technologies.includes("docker.svg"))
-              .map((project, index) => (
-                <ProjectCard key={index} {...project} />
-              ))}
+          <div className="grid grid-cols-1 gap-4 items-center lg:grid-cols-2 max-w-[1200px] mx-auto">
+            {projects.map((project, index) => (
+              <ProjectCard key={index} {...project} />
+            ))}
           </div>
         </div>
       </div>
