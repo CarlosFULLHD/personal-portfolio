@@ -36,12 +36,13 @@ const backendCards = [
     description:
       "Proficient in developing robust backend systems with Spring Boot. Experience includes building REST APIs, implementing layered architecture, and securing endpoints with JWT tokens and Spring Security. Currently expanding knowledge in microservices.",
     lists: `
-      - Projects: Backend projects with REST API
+      - REST API Best Practices, Pagination, Sort, Filter, security
       - Layered Architecture
-      - Spring Security with JWT Tokens
-      - High Cohesion and Loose Coupling
+      - Spring Security with JWT Tokens and RBAC
+      - Clear structure: High Cohesion and Loose Coupling
       - Password encryption
-      - Learning microservices
+      - Handling errors and return standard error codes
+      - Learning Spring Cloud...
     `,
   },
 ];
@@ -88,9 +89,9 @@ const devopsCards = [
 const Learning = [
   {
     id: 10,
-    title: "Currently Learning",
+    title: "React Query, Spring Cloud, Keycloak, Figma",
     icon: "keycloak.svg",
-    description: "Learning these news technologies",
+    description: "",
     lists: `- React Query: State and cache management library for React.js
 - Spring Cloud
 - Keycloak: Security and authentication
@@ -102,7 +103,7 @@ export const ModulesSection = () => {
   return (
     <section className="m-0 lg:w-full ">
       <h2 className="text-4xl lg:text-5xl font-bold text-center mb-4  text-yellow-dark px-4">
-        Abilities and Technologies:
+        Technical skills:
       </h2>
       <div className="mx-auto max-w-[1024px] lg:max-w-6xl p-1 sm:p-2 md:p-4 lg:p-8 rounded-lg">
         <div className="mb-8">

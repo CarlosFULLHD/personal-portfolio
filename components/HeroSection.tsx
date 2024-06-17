@@ -23,6 +23,44 @@ export const HeroSection = () => {
               myself new technologies. Currently, I am learning Keycloak and
               applying Spring Boot with microservices in my Thesis.
             </h2>
+            <div className="flex flex-col items-center lg:flex-row lg:justify-center lg:items-center lg:gap-10 lg:w-full mt-8">
+              <Button
+                as="a"
+                href="/cv.pdf"
+                download
+                className="w-full md:w-auto lg:mt-0 text-2xl font-bold bg-yellow-light dark:bg-yellow-dark hover:text-black shadow-lg shadow-blue-light text-white py-4 px-6 lg:px-10 flex items-center justify-center relative transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500"
+              >
+                Download CV
+              </Button>
+              <div className="flex space-x-4 mt-4 lg:mt-0">
+                <Button
+                  as="a"
+                  href="https://github.com/CarlosFULLHD"
+                  target="_blank"
+                  className="w-full md:w-auto text-2xl font-bold bg-white dark:bg-background-dark hover:bg-gray-100 dark:hover:bg-gray-700 shadow-lg text-black dark:text-white py-4 px-6 lg:px-10 flex items-center justify-center relative transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110"
+                >
+                  <img
+                    src="github-142-svgrepo-com.svg"
+                    alt="GitHub"
+                    className="w-8 h-8 mr-2"
+                  />
+                  GitHub
+                </Button>
+                <Button
+                  as="a"
+                  href="https://www.linkedin.com/in/carlos-nina-reynaga/"
+                  target="_blank"
+                  className="w-full md:w-auto text-2xl font-bold bg-white dark:bg-background-dark hover:bg-gray-100 dark:hover:bg-gray-700 shadow-lg text-black dark:text-white py-4 px-6 lg:px-10 flex items-center justify-center relative transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110"
+                >
+                  <img
+                    src="linkedin-color-svgrepo-com.svg"
+                    alt="LinkedIn"
+                    className="w-8 h-8 mr-2"
+                  />
+                  LinkedIn
+                </Button>
+              </div>
+            </div>
             <h3 className="text-2xl tracking-tighter pt-3 md:pl-16  lg:text-3xl xl:text-4xl">
               Tech Stack:
             </h3>
@@ -53,37 +91,13 @@ export const HeroSection = () => {
           <div className="mx-auto rounded-xl text-center md:w-1/3 md:pr-8 lg:pr-20 max-w-md">
             <Image
               src="carlitos_photo.webp"
-              alt="Foto de James Clear de Hábitos Atómicos"
+              alt="Carlos Nina Photo"
               width={100}
               height={100}
               className="w-full max-w-xs md:max-w-full aspect-square object-cover"
             />
           </div>
         </div>
-
-        {/* <div className="flex flex-col items-center lg:flex-row lg:justify-center lg:items-center lg:gap-10 lg:w-full">
-          <div className="w-full px-4 lg:w-auto">
-            <Button
-              onClick={() => {
-                const section = document.getElementById("modalidades");
-                if (section) {
-                  section.scrollIntoView({ behavior: "smooth" });
-                }
-              }}
-              className="w-full md:w-80 lg:mt-7 mx-auto text-2xl font-bold bg-yellow-light dark:bg-yellow-dark hover:text-black shadow-lg shadow-blue-light text-white py-6 px-6 lg:px-10 flex items-center justify-center relative transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500"
-            >
-              Descubre Más
-            </Button>
-          </div>
-          <div className="w-full px-4 lg:w-auto mt-4 lg:mt-0 lg:px-0">
-            <Button
-              href="#inscripcion"
-              className="w-full md:w-80 mx-auto text-xl lg:text-2xl font-bold text-yellow-dark md:mt-6 py-6 px-6 lg:px-10 flex items-center justify-center"
-            >
-              Inscríbete Ahora ⮕
-            </Button>
-          </div>
-        </div> */}
       </div>
     </div>
   );
