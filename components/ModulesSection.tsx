@@ -1,4 +1,4 @@
-import DetailedCard from "./components/DetailedCard";
+import DetailedCard from "./DetailedCard";
 
 const frontendCards = [
   {

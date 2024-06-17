@@ -14,7 +14,7 @@ import { link as linkStyles } from "@nextui-org/theme";
 import { siteConfig } from "@/config/site";
 import NextLink from "next/link";
 import clsx from "clsx";
-import ModalComponentContanctame from "../sections/phoneAdiction/components/ModalComponentContanctame";
+import ModalComponentContanctame from "../ModalComponentContanctame";
 import { Logo } from "../icons";
 import { routes } from "./SidebarRoutes";
 

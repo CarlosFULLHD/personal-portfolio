@@ -3,7 +3,7 @@ import React from "react";
 import Link from "next/link";
 import { Logo } from "../icons";
 import { SidebarRoutes } from "./SidebarRoutes";
-import ModalComponentContanctame from "../sections/phoneAdiction/components/ModalComponentContanctame";
+import ModalComponentContanctame from "../ModalComponentContanctame";
 
 const Sidebar = () => {
   return (
