@@ -34,11 +34,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      {/* Agrega aquí otros elementos del Head como estilos o favicon */}
-      <Script
-        strategy="lazyOnload"
-        src="https://app.lemonsqueezy.com/js/lemon.js"
-      />
       <body
         className={clsx(
           "min-h-screen font-sans antialiased bg-custom-background ",
@@ -47,12 +42,6 @@ export default function RootLayout({
         style={{ zIndex: 0 }}
       >
         <Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>
-          {/* <div className="relative flex flex-col font-circular ">
-            <Navbar />  
-            <main className="relative bg-custom-background">{children}</main>
-            <Analytics />
-            <footer className="w-full flex items-center justify-center py-3"></footer>
-          </div> */}
           <div className="elative flex flex-col  h-full dark:bg-black-50">
             <div className="h-12 md:h-10 lg:h-12 xl:h-14 fixed inset-y-0 w-full z-40 bg-custom-background dark:bg-blue-25">
               <div className=" pl-6 md:p-4 border-b h-full flex items-center shadow-sm z-50 bg-custom-background text-white">
@@ -60,9 +49,7 @@ export default function RootLayout({
                 <Navbar />
               </div>
             </div>
-            {/* <div className="hidden md:flex h-full w-64 lg:w-72 xl:w-80 flex-col fixed inset-y-0 z-40 pt-20">
-              <Sidebar />
-            </div> */}
+
             <main className="relative bg-custom-background mt-10">
               {children}
             </main>

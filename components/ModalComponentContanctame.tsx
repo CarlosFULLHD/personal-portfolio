@@ -9,14 +9,14 @@ import {
   Button,
   useDisclosure,
 } from "@nextui-org/react";
-import { User } from "lucide-react";
+import { Mail } from "lucide-react";
 import { cn } from "@/lib/utils";
 
-export default function ModalComponentContanctame() {
+export default function ModalComponentContactame() {
   const { isOpen, onOpen, onOpenChange } = useDisclosure();
   const [copySuccess, setCopySuccess] = useState("");
 
-  const email = "carlitos@carlitosnina.com"; // Usa tu dirección de correo electrónico real aquí
+  const email = "cninareynaga@gmail.com";
 
   const copyToClipboard = () => {
     navigator.clipboard.writeText(email).then(
@@ -29,41 +29,43 @@ export default function ModalComponentContanctame() {
       }
     );
   };
+
   return (
     <>
       <button
         onClick={onOpen}
         type="button"
         className={cn(
-          "flex items-center gap-x-2 px-6 py-4 text-slate-50 text-sm lg:text-base font-[500] transition-all hover:text-slate-300  rounded-xl",
+          "flex items-center gap-x-2 px-6 py-4 text-white text-sm lg:text-base font-medium transition-all hover:text-gray-300 rounded-xl",
           "bg-transparent"
         )}
       >
-        <User size={22} className="text-slate-500 lg:text-slate-50" />
-        Contáctame
+        <Mail size={22} className="text-gray-500 lg:text-white" />
+        Contact Me
       </button>
       <Modal
         backdrop="blur"
         isOpen={isOpen}
         onOpenChange={onOpenChange}
-        className="bg-white"
+        className="bg-white dark:bg-gray-800"
       >
         <ModalContent>
           {(onClose) => (
             <>
-              <ModalHeader className="flex flex-col gap-1 text-black">
-                Contáctame
+              <ModalHeader className="flex flex-col gap-1 text-black dark:text-white">
+                Contact Me
               </ModalHeader>
               <ModalBody>
-                <p className="text-black">
-                  Si eres una marca, negocio o estás interesado en alguna
-                  colaboración, no dudes en enviarme un correo electrónico.
-                  ¡Estoy abierto a discutir nuevas oportunidades!
+                <p className="text-black dark:text-white">
+                  If you are an employer, recruiter, or interested in discussing
+                  potential job opportunities, I would love to hear from you. I
+                  am open to exploring roles in companies or startups where I
+                  can contribute and grow.
                 </p>
-                <h1 className="font-bold mt-4 text-black">
-                  Correo electrónico:
+                <h1 className="font-bold mt-4 text-black dark:text-white">
+                  Email Address:
                 </h1>
-                <h2 className="bg-custom-yellow p-2 rounded-lg text-black font-bold">
+                <h2 className="bg-yellow-300 p-2 rounded-lg text-black dark:text-gray-800 font-bold select-none">
                   {email}
                 </h2>
                 {copySuccess && (
@@ -72,10 +74,14 @@ export default function ModalComponentContanctame() {
               </ModalBody>
               <ModalFooter>
                 <Button color="danger" variant="light" onPress={onClose}>
-                  Cerrar
+                  Close
                 </Button>
-                <Button color="secondary" onPress={copyToClipboard}>
-                  Copiar Correo
+                <Button
+                  className="bg-yellow-dark text-black font-bold"
+                  color="secondary"
+                  onPress={copyToClipboard}
+                >
+                  Copy Email
                 </Button>
               </ModalFooter>
             </>

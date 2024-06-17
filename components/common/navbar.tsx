@@ -26,9 +26,7 @@ export const Navbar = () => {
       shouldHideOnScroll
     >
       <NavbarContent className="basis-1/5 sm:basis-full " justify="start">
-        <Link className="flex justify-start gap-1" href="/">
-          <Logo className="w-24 h-24 md:w-32 md:h-32 lg:w-40 lg:h-40" />
-        </Link>
+        <Link className="flex justify-start gap-1" href="/"></Link>
       </NavbarContent>
 
       <NavbarContent
