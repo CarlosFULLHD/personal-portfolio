@@ -23,7 +23,9 @@ import {
 interface ProjectCardProps {
   title: string;
   image: string;
-  description: string;
+  shortDescription: string;
+  fullDescription: string;
+  keyPoints: string[];
   technologies: string[];
   carouselImages: string[];
   githubLink: string;
@@ -33,7 +35,9 @@ interface ProjectCardProps {
 const ProjectCard: React.FC<ProjectCardProps> = ({
   title,
   image,
-  description,
+  shortDescription,
+  fullDescription,
+  keyPoints,
   technologies,
   carouselImages,
   githubLink,
@@ -43,29 +47,50 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 
   return (
     <div>
-      <Card className="cursor-pointer" isPressable onClick={onOpen}>
-        <CardBody className="overflow-visible p-0">
+      <Card
+        className="cursor-pointer w-full h-[380px]"
+        isPressable
+        onClick={onOpen}
+      >
+        <CardBody
+          className="p-0 
+        "
+        >
           <Image
             shadow="sm"
             radius="lg"
             width="100%"
             alt={title}
-            className="w-full object-cover h-[140px]"
+            className="w-full object-cover h-full"
             src={image}
           />
         </CardBody>
-        <CardFooter className="text-small justify-between">
-          <b>{title}</b>
-          <p className="text-default-500">{description}</p>
+        <CardFooter className="text-small justify-between flex flex-col py-4">
+          <h1 className="text-bold text-2xl">{title}</h1>
+          <p className="text-default-500">{shortDescription}</p>
+          <div className="flex flex-row pb-2 lg:pb-4">
+            {technologies.map((tech, index) => (
+              <Image
+                key={index}
+                src={tech}
+                alt={tech}
+                className="w-8 h-8  mx-1"
+              />
+            ))}
+          </div>
         </CardFooter>
       </Card>
 
-      <Modal isOpen={isOpen} onOpenChange={onClose}>
+      <Modal
+        isOpen={isOpen}
+        onOpenChange={onClose}
+        className="mx-auto max-w-[1024px] p-1 sm:p-2 md:p-4 lg:p-8 rounded-lg"
+        scrollBehavior="inside"
+      >
         <ModalContent>
           <>
             <ModalHeader>{title}</ModalHeader>
             <ModalBody>
-              <p>{description}</p>
               <Carousel orientation="horizontal">
                 <CarouselMainContainer className="h-60">
                   {carouselImages.map((img, index) => (
@@ -99,7 +124,8 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
                   ))}
                 </CarouselThumbsContainer>
               </Carousel>
-              <div className="flex space-x-2 mt-4">
+              <h2 className="text-bold text-md mt-4">Technologies:</h2>
+              <div className="flex space-x-2 ">
                 {technologies.map((tech, index) => (
                   <Image
                     key={index}
@@ -109,6 +135,13 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
                   />
                 ))}
               </div>
+              <p>{fullDescription}</p>
+              <h3 className="mt-4 mb-2 font-bold">Key Features:</h3>
+              <ul className="list-disc ml-5">
+                {keyPoints.map((point, index) => (
+                  <li key={index}>{point}</li>
+                ))}
+              </ul>
             </ModalBody>
             <ModalFooter>
               <Button color="danger" variant="light" onClick={onClose}>
