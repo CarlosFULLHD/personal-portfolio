@@ -55,7 +55,7 @@ const projects = [
 
 export const ProjectsSection = () => {
   return (
-    <section className="m-0  self-center mt-8 ">
+    <section className="m-0  self-center mt-8" id="projects">
       <div className="mx-auto p-1 sm:p-2 md:p-4 lg:p-8 rounded-lg">
         <div className="mb-8">
           <h2 className="text-4xl font-bold mb-4 text-yellow-dark text-center">

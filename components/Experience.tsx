@@ -4,7 +4,7 @@ type Props = {};
 
 const Experience = (props: Props) => {
   return (
-    <section className="px-4">
+    <section className="px-4" id="experience">
       <h2 className="text-4xl lg:text-5xl font-bold text-center mb-4  text-yellow-dark px-4">
         Professional Experience
       </h2>

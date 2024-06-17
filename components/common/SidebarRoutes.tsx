@@ -8,20 +8,28 @@ import {
   Mail,
   Heart,
   User,
+  Code,
+  PanelsTopLeft,
+  GraduationCap,
 } from "lucide-react";
 import { usePathname } from "next/navigation";
 import { SidebarItem } from "./SidebarItem";
 
 export const routes = [
   {
-    icon: Heart,
-    label: "Donar",
-    href: "https://www.buymeacoffee.com/carlosnina3",
+    icon: Code,
+    label: "Experience",
+    href: "#experience",
   },
   {
-    icon: Mail,
-    label: "Newsletter",
-    href: "/newsletter",
+    icon: PanelsTopLeft,
+    label: "Projects",
+    href: "#projects",
+  },
+  {
+    icon: GraduationCap,
+    label: "Education",
+    href: "#education",
   },
 ];
 

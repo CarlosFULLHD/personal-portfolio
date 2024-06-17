@@ -17,6 +17,8 @@ import { HeroSection } from "@/components/HeroSection";
 import FooterSection from "@/components/common/FooterSection";
 import Experience from "@/components/Experience";
 import ProjectsSection from "@/components/ProjectsSection";
+import Education from "@/components/Education";
+import Hobbies from "@/components/Hobbies";
 export default function Home() {
   return (
     <section className="flex flex-col ">
@@ -25,6 +27,8 @@ export default function Home() {
       <ModulesSection />
       <Experience />
       <ProjectsSection />
+      <Education />
+      <Hobbies />
       <FooterSection />
     </section>
   );
