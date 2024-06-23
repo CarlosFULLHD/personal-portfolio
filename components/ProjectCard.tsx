@@ -49,18 +49,15 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   return (
     <div>
       <Card
-        className="cursor-pointer w-full h-[380px]"
+        className="cursor-pointer w-full h-[450px]"
         isPressable
         onClick={onOpen}
       >
-        <CardBody
-          className="p-0 
-        "
-        >
+        <CardBody className="p-0">
           <Image
             width="100%"
             alt={title}
-            className="w-full object-cover"
+            className="w-full h-[250px] object-cover"
             src={image}
           />
         </CardBody>
@@ -73,7 +70,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
                 key={index}
                 src={tech}
                 alt={tech}
-                className="w-8 h-8  mx-1"
+                className="w-10 h-10 mx-1"
               />
             ))}
           </div>
@@ -91,11 +88,11 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             <ModalHeader>{title}</ModalHeader>
             <ModalBody>
               <Carousel orientation="horizontal">
-                <CarouselMainContainer className="h-60">
+                <CarouselMainContainer className="h-80">
                   {carouselImages.map((img, index) => (
                     <SliderMainItem
                       key={index}
-                      className="border border-muted flex items-center justify-center h-52 rounded-md"
+                      className="border border-muted flex items-center justify-center h-72 rounded-md"
                     >
                       <Image
                         src={img}
@@ -105,7 +102,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
                     </SliderMainItem>
                   ))}
                 </CarouselMainContainer>
-                <CarouselThumbsContainer className="h-16">
+                <CarouselThumbsContainer className="h-20">
                   {carouselImages.map((img, index) => (
                     <SliderThumbItem
                       key={index}
@@ -130,7 +127,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
                     key={index}
                     src={tech}
                     alt={tech}
-                    className="w-8 h-8"
+                    className="w-10 h-10"
                   />
                 ))}
               </div>

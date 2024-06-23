@@ -32,23 +32,49 @@ const projects = [
       "postgresql-original-wordmark.svg",
     ],
     carouselImages: [
-      "https://d1kdkr2pswehq6.cloudfront.net/encuentra_proposito.jpg",
-      "https://d1kdkr2pswehq6.cloudfront.net/encuentra_proposito.jpg",
-      "https://d1kdkr2pswehq6.cloudfront.net/calnewport-img.webp",
+      "https://raw.githubusercontent.com/CarlosFULLHD/iot_garaje_inteligente/main/readme-imgs/image.png",
+      "https://raw.githubusercontent.com/CarlosFULLHD/iot_garaje_inteligente/main/readme-imgs/image.png",
+      "https://raw.githubusercontent.com/CarlosFULLHD/iot_garaje_inteligente/main/readme-imgs/image.png",
     ],
     githubLink: "https://github.com/username/project1",
     demoLink: "https://project1.demo.com",
   },
   {
-    title: "Project 2",
-    image: "project2.jpg",
-    shortDescription: "Description of project 2",
-    fullDescription: "Full description of project 2",
-    keyPoints: ["Feature 1", "Feature 2", "Feature 3"],
-    technologies: ["spring.svg", "java.svg"],
-    carouselImages: ["project2-1.jpg", "project2-2.jpg", "project2-3.jpg"],
-    githubLink: "https://github.com/username/project2",
-    demoLink: "https://project2.demo.com",
+    title: "SmartPark - IoT Garage System",
+    image: "readme-imgs/image.png",
+    shortDescription:
+      "An intelligent garage system utilizing IoT for real-time management and monitoring of parking spaces.",
+    fullDescription: `SmartPark is an intelligent garage system that optimizes and automates real-time parking space management to enhance efficiency and security for users while providing statistical data for the university.
+
+    Objective:
+    Optimize and automate real-time parking space management, enhancing efficiency and security for users while providing statistical data for the university.`,
+    keyPoints: [
+      "Complete and Automated Integration: Uses modern technologies like Raspberry Pi Pico W, Flutter, and Spring Boot.",
+      "Flexible Authentication Methods: Supports code and license plate recognition for authentication.",
+      "Intuitive Mobile Application: Provides a user-friendly interface for managing and monitoring parking spaces.",
+      "Advanced Security Measures: Ensures secure access and management of parking spaces.",
+      "Real-Time Monitoring: Offers continuous monitoring and updates about parking space availability.",
+      "User-Friendly Interface: Facilitates easy interaction for users through a mobile app.",
+    ],
+    technologies: [
+      "spring.svg",
+      "flutter.svg",
+      "postgresql-original-wordmark.svg",
+      "raspberry-pi.svg",
+      "python.svg",
+    ],
+    carouselImages: [
+      "readme-imgs/image-1.png",
+      "https://raw.githubusercontent.com/CarlosFULLHD/iot_garaje_inteligente/main/readme-imgs/image.png",
+      "https://raw.githubusercontent.com/CarlosFULLHD/iot_garaje_inteligente/main/readme-imgs/DB.png",
+      "https://github.com/CarlosFULLHD/iot_garaje_inteligente/raw/main/readme-imgs/image-1.png",
+      "https://github.com/CarlosFULLHD/iot_garaje_inteligente/raw/main/readme-imgs/image-13.png",
+      "https://github.com/CarlosFULLHD/iot_garaje_inteligente/raw/main/readme-imgs/image-14.png",
+      "https://github.com/CarlosFULLHD/iot_garaje_inteligente/raw/main/readme-imgs/image-15.png",
+      "https://github.com/CarlosFULLHD/iot_garaje_inteligente/raw/main/readme-imgs/image-16.png",
+    ],
+    githubLink: "https://github.com/username/smartpark",
+    demoLink: "https://smartpark.demo.com",
   },
   // Add more projects here
 ];

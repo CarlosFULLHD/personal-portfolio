@@ -1,29 +1,58 @@
-# Carlitos Nina Web Page
+## Portfolio Website
 
-## Actualizaciones
+### Description
 
-Para cambios de imagenes, mp4 videos y otros se tiene que hacer cambio de NOMBRE del archivo, para así funciona correctamente con el cache
-Tasmbien configurar metadata en cada elemento nuevo o cambios
-![alt text](image.png)
+Welcome to my portfolio website repository! This project showcases my skills and projects as a Junior Full Stack Developer, highlighting my expertise in both frontend and backend technologies. The portfolio is designed to provide an engaging and comprehensive overview of my professional experience, technical skills, and key projects.
 
-Contenido estático:
-En page.tsx se encuentra mucho contenido estatico para servirlo de manera preparada en HTML para el servidor gracias a next js
+### Features
 
-Imagenes y Scripts son renderizamos para mejor WebCoreVitals
-Esto tambien haciendo uso de Lemon JS como metodo de pago para productos
+- **Responsive Design**: The website is fully responsive and provides an optimal viewing experience across all devices.
+- **Project Showcase**: Detailed descriptions and images of my key projects, including technologies used and key features.
+- **Technology Icons**: Visual representation of technologies with icons for easy recognition.
+- **Image Modals**: Clickable project images that open in full resolution modals for a detailed view.
+- **Carousel**: Interactive image carousel for project showcases.
+- **Contact Information**: Easy access to my contact details and resume.
 
-Google Analytics id:
-Lemon js: Aplicado a 1 producto "Libertad Digital"
+### Technologies Used
 
-## Estilos
+- **Frontend**: Next.js, React.js, TypeScript, Tailwind CSS
+- **Backend**: Spring Boot (Java), PostgreSQL
+- **DevOps**: Docker, Jenkins
+- **Deployment**: Vercel, Netlify, AWS
 
-- Tailwind CSS
-- Next UI en lightmode
-- Shadcn para acordeon
+### Installation
 
-## CND
+To run this project locally, follow these steps:
 
-- S3
-- Cloud Front
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/CarlosFULLHD/personal-portfolio.git
+   ```
+2. **Navigate to the project directory:**
+   ```bash
+   cd personal-portfolio
+   ```
+3. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+4. **Start the development server:**
+   ```bash
+   npm run dev
+   ```
+5. **Open your browser and visit:**
+   ```
+   http://localhost:3000
+   ```
 
-##
+### Usage
+
+This portfolio website is designed to be a comprehensive representation of my work and skills. Feel free to explore the different sections, check out my projects, and get in touch through the contact information provided.
+
+### Contributing
+
+If you would like to contribute to this project, please fork the repository and create a pull request. All contributions are welcome!
+
+### License
+
+This project is licensed under the MIT License.
