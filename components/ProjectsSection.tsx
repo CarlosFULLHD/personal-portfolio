@@ -4,7 +4,7 @@ import ProjectCard from "./ProjectCard";
 const projects = [
   {
     title: "Thesis Management System",
-    image: "https://d1kdkr2pswehq6.cloudfront.net/encuentra_proposito.jpg",
+    image: "",
     shortDescription: `The Thesis Management System is designed to support both students and faculty throughout the thesis process.`,
     fullDescription: `The Thesis Management System is designed to support both students and faculty throughout the thesis process. It includes a range of features to facilitate information dissemination, tutor management, project submissions, and progress tracking. The system ensures secure access for users and provides comprehensive tools for managing thesis-related activities.
 
@@ -24,30 +24,70 @@ const projects = [
       "User Management: Allows managing users, changing roles, and deregistering students.",
     ],
     technologies: [
-      "next-js.svg",
-      "react-svgrepo-com.svg",
-      "typescript-official-svgrepo-com.svg",
-      "tailwind-svgrepo-com.svg",
-      "spring.svg",
-      "postgresql-original-wordmark.svg",
+      "https://skillicons.dev/icons?i=nextjs",
+      "https://skillicons.dev/icons?i=react",
+      "https://skillicons.dev/icons?i=typescript",
+      "https://skillicons.dev/icons?i=tailwind",
+      "https://skillicons.dev/icons?i=spring",
+      "https://skillicons.dev/icons?i=postgresql",
+    ],
+    carouselImages: ["", "", ""],
+    githubLink: "https://github.com/CarlosFULLHD/thesis_management_system",
+    demoLink: "",
+  },
+
+  {
+    title: "Feria del Empleo UCB",
+    image:
+      "https://github.com/CarlosFULLHD/JobFairPlatform/raw/main/imgs/image.png",
+    shortDescription: `The Feria del Empleo UCB project is designed to support students at Universidad Católica Boliviana (UCB) in their transition from university to the workforce by connecting them with potential employers through a virtual job fair platform.`,
+    fullDescription: `The Feria del Empleo UCB project is designed to support students at Universidad Católica Boliviana (UCB) in their transition from university to the workforce by connecting them with potential employers through a virtual job fair platform. The platform allows institutions to present themselves and interact with students via video content, social media links, and Zoom meetings.
+
+    Objective:
+    The Feria del Empleo UCB aims to facilitate students' transition from university to the workforce by providing a platform for interaction with potential employers.`,
+    keyPoints: [
+      "View Institutions: Students can browse all participating institutions organized by sectors.",
+      "Institution Details: Students can view detailed information about each institution, including videos, social media links, and other relevant information.",
+      "Zoom Meeting Registration: Students can register for Zoom meetings hosted by institutions, subject to availability and capacity limits.",
+      "Event Calendar: Students can view a calendar of scheduled events and Zoom meeting links.",
+      "Manage Institutions: Administrators can create and manage institution profiles, including descriptions, videos, images (with drag and drop), and social media links.",
+      "Manage Events: Administrators can create and schedule Zoom meetings, set capacity limits, and manage event details.",
+    ],
+    technologies: [
+      "https://skillicons.dev/icons?i=vue",
+      "https://cdn.vuetifyjs.com/docs/images/brand-kit/v-logo-atom.svg",
+      "https://skillicons.dev/icons?i=express",
+      "https://skillicons.dev/icons?i=mysql",
     ],
     carouselImages: [
-      "https://raw.githubusercontent.com/CarlosFULLHD/iot_garaje_inteligente/main/readme-imgs/image.png",
-      "https://raw.githubusercontent.com/CarlosFULLHD/iot_garaje_inteligente/main/readme-imgs/image.png",
-      "https://raw.githubusercontent.com/CarlosFULLHD/iot_garaje_inteligente/main/readme-imgs/image.png",
+      "https://github.com/CarlosFULLHD/JobFairPlatform/raw/main/imgs/image-2.png",
+      "https://github.com/CarlosFULLHD/JobFairPlatform/raw/main/imgs/image-1.png",
+      "https://github.com/CarlosFULLHD/JobFairPlatform/raw/main/imgs/image-12.png",
+      "https://github.com/CarlosFULLHD/JobFairPlatform/raw/main/imgs/image-14.png",
+      "https://github.com/CarlosFULLHD/JobFairPlatform/raw/main/imgs/image-3.png",
+      "https://github.com/CarlosFULLHD/JobFairPlatform/raw/main/imgs/image-5.png",
+      "https://github.com/CarlosFULLHD/JobFairPlatform/raw/main/imgs/image-6.png",
+      "https://github.com/CarlosFULLHD/JobFairPlatform/raw/main/imgs/image-7.png",
+      "https://github.com/CarlosFULLHD/JobFairPlatform/raw/main/imgs/image-8.png",
+      "https://github.com/CarlosFULLHD/JobFairPlatform/raw/main/imgs/image-9.png",
+      "https://github.com/CarlosFULLHD/JobFairPlatform/raw/main/imgs/image-10.png",
+      "https://github.com/CarlosFULLHD/JobFairPlatform/raw/main/imgs/image-11.png",
+      "https://github.com/CarlosFULLHD/JobFairPlatform/raw/main/imgs/image-12.png",
+      "https://github.com/CarlosFULLHD/JobFairPlatform/raw/main/imgs/image-13.png",
     ],
-    githubLink: "https://github.com/username/project1",
-    demoLink: "https://project1.demo.com",
+    githubLink: "https://github.com/CarlosFULLHD/JobFairPlatform",
+    demoLink: "https://jobfair.demo.com",
   },
   {
     title: "SmartPark - IoT Garage System",
-    image: "readme-imgs/image.png",
+    image:
+      "https://github.com/CarlosFULLHD/iot_garaje_inteligente/raw/main/readme-imgs/image.png",
     shortDescription:
       "An intelligent garage system utilizing IoT for real-time management and monitoring of parking spaces.",
     fullDescription: `SmartPark is an intelligent garage system that optimizes and automates real-time parking space management to enhance efficiency and security for users while providing statistical data for the university.
-
+  
     Objective:
-    Optimize and automate real-time parking space management, enhancing efficiency and security for users while providing statistical data for the university.`,
+    Optimize and automate real-time parking space management to enhance efficiency and security for users while providing statistical data for the university.`,
     keyPoints: [
       "Complete and Automated Integration: Uses modern technologies like Raspberry Pi Pico W, Flutter, and Spring Boot.",
       "Flexible Authentication Methods: Supports code and license plate recognition for authentication.",
@@ -57,26 +97,36 @@ const projects = [
       "User-Friendly Interface: Facilitates easy interaction for users through a mobile app.",
     ],
     technologies: [
-      "spring.svg",
-      "flutter.svg",
-      "postgresql-original-wordmark.svg",
-      "raspberry-pi.svg",
-      "python.svg",
+      "https://skillicons.dev/icons?i=spring",
+      "https://skillicons.dev/icons?i=flutter",
+      "https://skillicons.dev/icons?i=postgresql",
+      "https://skillicons.dev/icons?i=raspberrypi",
+      "https://skillicons.dev/icons?i=python",
     ],
     carouselImages: [
-      "readme-imgs/image-1.png",
-      "https://raw.githubusercontent.com/CarlosFULLHD/iot_garaje_inteligente/main/readme-imgs/image.png",
-      "https://raw.githubusercontent.com/CarlosFULLHD/iot_garaje_inteligente/main/readme-imgs/DB.png",
+      "https://github.com/CarlosFULLHD/iot_garaje_inteligente/raw/main/readme-imgs/image.png",
+      "https://github.com/CarlosFULLHD/iot_garaje_inteligente/raw/main/readme-imgs/DB.png",
       "https://github.com/CarlosFULLHD/iot_garaje_inteligente/raw/main/readme-imgs/image-1.png",
       "https://github.com/CarlosFULLHD/iot_garaje_inteligente/raw/main/readme-imgs/image-13.png",
       "https://github.com/CarlosFULLHD/iot_garaje_inteligente/raw/main/readme-imgs/image-14.png",
+      "https://github.com/CarlosFULLHD/iot_garaje_inteligente/raw/main/readme-imgs/image-2.png",
       "https://github.com/CarlosFULLHD/iot_garaje_inteligente/raw/main/readme-imgs/image-15.png",
+      "https://github.com/CarlosFULLHD/iot_garaje_inteligente/raw/main/readme-imgs/image-3.png",
+      "https://github.com/CarlosFULLHD/iot_garaje_inteligente/raw/main/readme-imgs/image-4.png",
+      "https://github.com/CarlosFULLHD/iot_garaje_inteligente/raw/main/readme-imgs/image-5.png",
+      "https://github.com/CarlosFULLHD/iot_garaje_inteligente/raw/main/readme-imgs/image-6.png",
+      "https://github.com/CarlosFULLHD/iot_garaje_inteligente/raw/main/readme-imgs/image-10.png",
+      "https://github.com/CarlosFULLHD/iot_garaje_inteligente/raw/main/readme-imgs/image-11.png",
+      "https://github.com/CarlosFULLHD/iot_garaje_inteligente/raw/main/readme-imgs/image-12.png",
       "https://github.com/CarlosFULLHD/iot_garaje_inteligente/raw/main/readme-imgs/image-16.png",
+      "https://github.com/CarlosFULLHD/iot_garaje_inteligente/raw/main/readme-imgs/image-17.png",
+      "https://github.com/CarlosFULLHD/iot_garaje_inteligente/raw/main/readme-imgs/image-18.png",
+      "https://github.com/CarlosFULLHD/iot_garaje_inteligente/raw/main/readme-imgs/image-9.png",
+      "https://github.com/CarlosFULLHD/iot_garaje_inteligente/raw/main/readme-imgs/image-10.png",
     ],
-    githubLink: "https://github.com/username/smartpark",
+    githubLink: "https://github.com/CarlosFULLHD/iot_garaje_inteligente",
     demoLink: "https://smartpark.demo.com",
   },
-  // Add more projects here
 ];
 
 export const ProjectsSection = () => {
@@ -94,14 +144,14 @@ export const ProjectsSection = () => {
           </div>
         </div>
 
-        <div className="mb-8">
+        {/* <div className="mb-8">
           <h2 className="text-2xl font-bold mb-4">Other Projects:</h2>
           <div className="grid grid-cols-1 gap-4 items-center lg:grid-cols-2 max-w-[1200px] mx-auto">
             {projects.map((project, index) => (
               <ProjectCard key={index} {...project} />
             ))}
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );
