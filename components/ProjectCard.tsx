@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   Card,
   CardBody,
@@ -45,6 +45,18 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   demoLink,
 }) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
+  const [isImageModalOpen, setImageModalOpen] = useState(false);
+  const [selectedImage, setSelectedImage] = useState("");
+
+  const openImageModal = (img: string) => {
+    setSelectedImage(img);
+    setImageModalOpen(true);
+  };
+
+  const closeImageModal = () => {
+    setSelectedImage("");
+    setImageModalOpen(false);
+  };
 
   return (
     <div>
@@ -98,6 +110,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
                         src={img}
                         alt={`Slide ${index + 1}`}
                         className="w-full h-full object-cover rounded-md"
+                        onClick={() => openImageModal(img)}
                       />
                     </SliderMainItem>
                   ))}
@@ -114,6 +127,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
                           src={img}
                           alt={`Slide ${index + 1}`}
                           className="w-full h-full object-cover rounded-md"
+                          onClick={() => openImageModal(img)}
                         />
                       </span>
                     </SliderThumbItem>
@@ -168,6 +182,32 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
               </Button>
             </ModalFooter>
           </>
+        </ModalContent>
+      </Modal>
+
+      <Modal
+        isOpen={isImageModalOpen}
+        onOpenChange={closeImageModal}
+        size="full"
+      >
+        <ModalContent>
+          <ModalBody className="flex justify-center items-center">
+            <Image
+              src={selectedImage}
+              alt="Full Resolution"
+              className="w-full h-full object-cover"
+            />
+          </ModalBody>
+          <ModalFooter>
+            <Button
+              className="font-bold w-20 h-10"
+              color="danger"
+              variant="solid"
+              onClick={closeImageModal}
+            >
+              Close
+            </Button>
+          </ModalFooter>
         </ModalContent>
       </Modal>
     </div>
