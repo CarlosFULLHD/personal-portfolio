@@ -4,7 +4,8 @@ import ProjectCard from "./ProjectCard";
 const projects = [
   {
     title: "Thesis Management System",
-    image: "https://github.com/CarlosFULLHD/thesis_management_system/raw/main/image.png",
+    image:
+      "https://github.com/CarlosFULLHD/thesis_management_system/raw/main/imgs/image.png",
     shortDescription: `The Thesis Management System is designed to support both students and faculty throughout the thesis process.`,
     fullDescription: `The Thesis Management System is designed to support both students and faculty throughout the thesis process. It includes a range of features to facilitate information dissemination, tutor management, project submissions, and progress tracking. The system ensures secure access for users and provides comprehensive tools for managing thesis-related activities.
 
@@ -31,7 +32,14 @@ const projects = [
       "https://skillicons.dev/icons?i=spring",
       "https://skillicons.dev/icons?i=postgresql",
     ],
-    carouselImages: ["https://github.com/CarlosFULLHD/thesis_management_system/raw/main/image-1.png", "https://github.com/CarlosFULLHD/thesis_management_system/raw/main/image-2.png", "https://github.com/CarlosFULLHD/thesis_management_system/raw/main/image-10.png","https://github.com/CarlosFULLHD/thesis_management_system/raw/main/image-11.png","https://github.com/CarlosFULLHD/thesis_management_system/raw/main/image-4.png","https://github.com/CarlosFULLHD/thesis_management_system/raw/main/image-9.png"],
+    carouselImages: [
+      "https://github.com/CarlosFULLHD/thesis_management_system/raw/main/imgs/image-1.png",
+      "https://github.com/CarlosFULLHD/thesis_management_system/raw/main/imgs/image-2.png",
+      "https://github.com/CarlosFULLHD/thesis_management_system/raw/main/imgs/image-10.png",
+      "https://github.com/CarlosFULLHD/thesis_management_system/raw/main/imgs/image-11.png",
+      "https://github.com/CarlosFULLHD/thesis_management_system/raw/main/imgs/image-4.png",
+      "https://github.com/CarlosFULLHD/thesis_management_system/raw/main/imgs/image-9.png",
+    ],
     githubLink: "https://github.com/CarlosFULLHD/thesis_management_system",
     demoLink: "",
   },
