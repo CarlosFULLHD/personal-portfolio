@@ -34,7 +34,7 @@ export const metadata: Metadata = {
       "Explore the diverse and impactful projects of Carlos Nina, a Junior Full Stack Developer proficient in Next.js, Spring Boot, and microservices. My portfolio includes transformative projects like the thesis management system and Job Fair Platform. ",
     images: [
       {
-        url: "https://carlitosnina.com/opengraph-image.png",
+        url: "https://www.carlitosnina.com/opengraph-image.png",
         width: 1200,
         height: 630,
         alt: "Carlos Nina's Portfolio",
@@ -49,7 +49,7 @@ export const metadata: Metadata = {
       "Explore the diverse and impactful projects of Carlos Nina, a Junior Full Stack Developer proficient in Next.js, Spring Boot, and microservices. My portfolio includes transformative projects like the thesis management system and Job Fair Platform. ",
     images: [
       {
-        url: "https://carlitosnina.com/opengraph-image.png",
+        url: "https://www.carlitosnina.com/opengraph-image.png",
         width: 1200,
         height: 630,
         alt: "Carlos Nina's Portfolio",
