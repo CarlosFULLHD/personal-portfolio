@@ -16,6 +16,7 @@ import { usePathname } from "next/navigation";
 import { SidebarItem } from "./SidebarItem";
 
 export const routes = [
+  { icon: GraduationCap, label: "Skills", href: "#skills" },
   {
     icon: Code,
     label: "Experience",
@@ -23,13 +24,8 @@ export const routes = [
   },
   {
     icon: PanelsTopLeft,
-    label: "Projects",
+    label: "Key Projects",
     href: "#projects",
-  },
-  {
-    icon: GraduationCap,
-    label: "Education",
-    href: "#education",
   },
 ];
 

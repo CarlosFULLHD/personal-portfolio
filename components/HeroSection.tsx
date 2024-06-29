@@ -36,7 +36,7 @@ export const HeroSection = () => {
               I have successfully led and contributed to multiple projects,
               earning commendations for performance and innovation.
             </h2>
-            <div className="flex flex-col items-center lg:flex-row lg:justify-center lg:items-center lg:gap-10 lg:w-full mt-8">
+            <div className="lg:ml-20 xl:ml-0 flex flex-col items-center lg:flex-row lg:justify-center lg:items-center lg:gap-10 lg:w-full mt-8">
               <Button
                 as="a"
                 href="\CurriculumVitae_CarlosNina.pdf"

@@ -24,7 +24,7 @@ function Resume(): ReactElement {
   });
 
   return (
-    <section className="py-16 font-poppins">
+    <section id="experience" className="py-16 font-poppins">
       <h2 className="text-4xl lg:text-5xl font-bold text-center mb-4 text-yellow-dark px-4">
         Experience
       </h2>

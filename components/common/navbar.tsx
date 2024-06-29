@@ -2,20 +2,15 @@
 import {
   Navbar as NextUINavbar,
   NavbarContent,
-  NavbarMenu,
-  NavbarMenuToggle,
   NavbarBrand,
   NavbarItem,
-  NavbarMenuItem,
 } from "@nextui-org/navbar";
 import { Link } from "@nextui-org/link";
-import Image from "next/image";
-import { link as linkStyles } from "@nextui-org/theme";
+import { FaChevronDown } from "react-icons/fa";
 import { siteConfig } from "@/config/site";
 import NextLink from "next/link";
-import clsx from "clsx";
 import ModalComponentContanctame from "../ModalComponentContanctame";
-import { Logo } from "../icons";
+import { scrollIntoView } from "@/utils/scrollIntoView";
 import { routes } from "./SidebarRoutes";
 
 export const Navbar = () => {
@@ -25,7 +20,7 @@ export const Navbar = () => {
       maxWidth="full"
       shouldHideOnScroll
     >
-      <NavbarContent className="basis-1/5 sm:basis-full " justify="start">
+      <NavbarContent className="basis-1/5 sm:basis-full" justify="start">
         <Link className="flex justify-start gap-1" href="/"></Link>
       </NavbarContent>
 
@@ -33,16 +28,16 @@ export const Navbar = () => {
         className="hidden md:flex basis-1/5 sm:basis-full"
         justify="end"
       >
-        <ul className=" hidden md:flex gap-14 text-white">
+        <ul className="hidden md:flex gap-14 text-white">
           {routes.map((item) => (
             <NavbarItem key={item.href}>
-              <Link
+              <button
                 className="text-white text-xs lg:text-lg flex items-center gap-2"
-                href={item.href}
+                onClick={() => scrollIntoView(item.href.slice(1))} // Elimina el "#" del href
               >
                 <item.icon className="w-5 h-5" />
                 {item.label}
-              </Link>
+              </button>
             </NavbarItem>
           ))}
         </ul>

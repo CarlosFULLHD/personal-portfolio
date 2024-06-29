@@ -1,9 +1,9 @@
 "use client";
 
 import { LucideIcon } from "lucide-react";
-import { usePathname, useRouter } from "next/navigation";
-
+import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
+import { scrollIntoView } from "@/utils/scrollIntoView";
 
 interface SidebarItemProps {
   icon: LucideIcon;
@@ -13,7 +13,6 @@ interface SidebarItemProps {
 
 export const SidebarItem = ({ icon: Icon, label, href }: SidebarItemProps) => {
   const pathname = usePathname();
-  const router = useRouter();
 
   const isActive =
     (pathname === "/" && href === "/") ||
@@ -21,7 +20,7 @@ export const SidebarItem = ({ icon: Icon, label, href }: SidebarItemProps) => {
     pathname?.startsWith(`${href}/`);
 
   const onClick = () => {
-    router.push(href);
+    scrollIntoView(href.slice(1)); // Elimina el "#" del href
   };
 
   return (
