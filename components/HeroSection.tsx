@@ -36,14 +36,14 @@ export const HeroSection = () => {
               I have successfully led and contributed to multiple projects,
               earning commendations for performance and innovation.
             </h2>
-            <div className="flex flex-col items-center lg:flex-row lg:justify-start lg:items-center lg:gap-x-10 lg:w-full mt-8 lg:ml-16 ">
+            <div className="flex flex-col items-center lg:flex-row lg:justify-center lg:items-center lg:gap-10 lg:w-full mt-8">
               <Button
                 as="a"
                 href="\CurriculumVitae_CarlosNina.pdf"
                 download
-                className="w-full md:w-auto text-2xl font-bold bg-white dark:bg-background-darker hover:bg-gray-100 dark:hover:bg-gray-700 shadow-lg text-black dark:text-white py-4 px-6 lg:px-10 flex items-center justify-center relative transition ease-in-out delay-0 hover:-translate-y-1 hover:scale-110"
+                className="w-full md:w-auto lg:mt-0 text-2xl font-bold bg-yellow-light dark:bg-yellow-dark hover:text-black shadow-lg shadow-blue-light text-white py-4 px-6 lg:px-10 flex items-center justify-center relative transition ease-in-out delay-0 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500"
               >
-                CV
+                Download CV
               </Button>
               <div className="flex space-x-4 mt-4 lg:mt-0">
                 <Button
@@ -53,10 +53,11 @@ export const HeroSection = () => {
                   className="w-full md:w-auto text-2xl font-bold bg-white dark:bg-background-darker hover:bg-gray-100 dark:hover:bg-gray-700 shadow-lg text-black dark:text-white py-4 px-6 lg:px-10 flex items-center justify-center relative transition ease-in-out delay-0 hover:-translate-y-1 hover:scale-110"
                 >
                   <img
-                    src="https://skillicons.dev/icons?i=github"
+                    src="github-142-svgrepo-com.svg"
                     alt="GitHub"
-                    className="w-8 h-8"
+                    className="w-8 h-8 mr-2"
                   />
+                  GitHub
                 </Button>
                 <Button
                   as="a"
@@ -65,10 +66,11 @@ export const HeroSection = () => {
                   className="w-full md:w-auto text-2xl font-bold bg-white dark:bg-background-darker hover:bg-gray-100 dark:hover:bg-gray-700 shadow-lg text-black dark:text-white py-4 px-6 lg:px-10 flex items-center justify-center relative transition ease-in-out delay-0 hover:-translate-y-1 hover:scale-110"
                 >
                   <img
-                    src="https://skillicons.dev/icons?i=linkedin"
+                    src="linkedin-color-svgrepo-com.svg"
                     alt="LinkedIn"
-                    className="w-8 h-8"
+                    className="w-8 h-8 mr-2"
                   />
+                  LinkedIn
                 </Button>
               </div>
             </div>

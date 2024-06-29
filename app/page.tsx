@@ -29,8 +29,7 @@ export default function Home() {
       <Resume />
 
       <ProjectsSection />
-      <Education />
-      <Hobbies />
+
       <FooterSection />
     </section>
   );

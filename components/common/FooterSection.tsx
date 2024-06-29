@@ -15,9 +15,9 @@ const FooterComponent: React.FC = () => {
         <div className="flex flex-col items-center lg:flex-row lg:justify-center lg:items-center lg:gap-10 lg:w-full mt-8">
           <Button
             as="a"
-            href="/cv.pdf"
+            href="\CurriculumVitae_CarlosNina.pdf"
             download
-            className="w-full md:w-auto lg:mt-0 text-2xl font-bold bg-yellow-light dark:bg-yellow-dark hover:text-black shadow-lg shadow-blue-light text-white py-4 px-6 lg:px-10 flex items-center justify-center relative transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500"
+            className="w-full md:w-auto lg:mt-0 text-2xl font-bold bg-yellow-light dark:bg-yellow-dark hover:text-black shadow-lg shadow-blue-light text-white py-4 px-6 lg:px-10 flex items-center justify-center relative transition ease-in-out delay-0 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500"
           >
             Download CV
           </Button>
@@ -26,7 +26,7 @@ const FooterComponent: React.FC = () => {
               as="a"
               href="https://github.com/CarlosFULLHD"
               target="_blank"
-              className="w-full md:w-auto text-2xl font-bold bg-white dark:bg-background-dark hover:bg-gray-100 dark:hover:bg-gray-700 shadow-lg text-black dark:text-white py-4 px-6 lg:px-10 flex items-center justify-center relative transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110"
+              className="w-full md:w-auto text-2xl font-bold bg-white dark:bg-background-darker hover:bg-gray-100 dark:hover:bg-gray-700 shadow-lg text-black dark:text-white py-4 px-6 lg:px-10 flex items-center justify-center relative transition ease-in-out delay-0 hover:-translate-y-1 hover:scale-110"
             >
               <img
                 src="github-142-svgrepo-com.svg"
@@ -39,7 +39,7 @@ const FooterComponent: React.FC = () => {
               as="a"
               href="https://www.linkedin.com/in/carlos-nina-reynaga/"
               target="_blank"
-              className="w-full md:w-auto text-2xl font-bold bg-white dark:bg-background-dark hover:bg-gray-100 dark:hover:bg-gray-700 shadow-lg text-black dark:text-white py-4 px-6 lg:px-10 flex items-center justify-center relative transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110"
+              className="w-full md:w-auto text-2xl font-bold bg-white dark:bg-background-darker hover:bg-gray-100 dark:hover:bg-gray-700 shadow-lg text-black dark:text-white py-4 px-6 lg:px-10 flex items-center justify-center relative transition ease-in-out delay-0 hover:-translate-y-1 hover:scale-110"
             >
               <img
                 src="linkedin-color-svgrepo-com.svg"
