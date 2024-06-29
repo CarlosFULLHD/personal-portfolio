@@ -25,10 +25,14 @@ const projects = [
     technologies: [
       "https://skillicons.dev/icons?i=nextjs",
       "https://skillicons.dev/icons?i=react",
+      "https://nextui.org/apple-touch-icon.png",
+      "https://avatars.githubusercontent.com/u/139895814?s=280&v=4",
       "https://skillicons.dev/icons?i=typescript",
       "https://skillicons.dev/icons?i=tailwind",
       "https://skillicons.dev/icons?i=spring",
+      "https://static-00.iconduck.com/assets.00/swagger-icon-512x512-halz44im.png",
       "https://skillicons.dev/icons?i=postgresql",
+      "https://skillicons.dev/icons?i=docker",
     ],
     carouselImages: [
       "https://github.com/CarlosFULLHD/thesis_management_system/raw/main/imgs/image-1.png",
@@ -58,9 +62,10 @@ const projects = [
     ],
     technologies: [
       "https://skillicons.dev/icons?i=vue",
-
+      "https://static-00.iconduck.com/assets.00/vuetify-icon-1793x2048-xtqk92sz.png",
       "https://skillicons.dev/icons?i=express",
       "https://skillicons.dev/icons?i=mysql",
+      "https://skillicons.dev/icons?i=docker",
     ],
     carouselImages: [
       "https://github.com/CarlosFULLHD/JobFairPlatform/raw/main/imgs/image-2.png",
@@ -105,6 +110,7 @@ const projects = [
       "https://skillicons.dev/icons?i=postgresql",
       "https://skillicons.dev/icons?i=raspberrypi",
       "https://skillicons.dev/icons?i=python",
+      "https://skillicons.dev/icons?i=docker",
     ],
     carouselImages: [
       "https://github.com/CarlosFULLHD/iot_garaje_inteligente/raw/main/readme-imgs/image.png",
@@ -148,9 +154,9 @@ const projects = [
     ],
     technologies: [
       "https://skillicons.dev/icons?i=spring",
-      "https://skillicons.dev/icons?i=docker",
-      "https://skillicons.dev/icons?i=postgresql",
       "https://skillicons.dev/icons?i=java",
+      "https://skillicons.dev/icons?i=postgresql",
+      "https://skillicons.dev/icons?i=docker",
     ],
     carouselImages: [
       "https://github.com/CarlosFULLHD/spring-microservices/raw/main/imgs/1.jpg",
@@ -186,7 +192,11 @@ const projects = [
     ],
     technologies: [
       "https://skillicons.dev/icons?i=nextjs",
+      "https://skillicons.dev/icons?i=react",
       "https://skillicons.dev/icons?i=tailwind",
+
+      "https://nextui.org/apple-touch-icon.png",
+      "https://avatars.githubusercontent.com/u/139895814?s=280&v=4",
       "https://skillicons.dev/icons?i=vercel",
       "https://skillicons.dev/icons?i=aws",
     ],
@@ -219,10 +229,12 @@ const projects = [
       "Shopping cart for order review and modification",
     ],
     technologies: [
-      "https://skillicons.dev/icons?i=docker",
       "https://skillicons.dev/icons?i=mysql",
       "https://skillicons.dev/icons?i=flask",
       "https://skillicons.dev/icons?i=python",
+      "https://skillicons.dev/icons?i=html",
+      "https://skillicons.dev/icons?i=css",
+      "https://skillicons.dev/icons?i=docker",
     ],
     carouselImages: [
       "https://github.com/CarlosFULLHD/Proyecto-Sis-Info/raw/master/imgs/image.png",

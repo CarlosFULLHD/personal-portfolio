@@ -16,7 +16,7 @@ export const HeroSection = () => {
   return (
     <div className="relative px-0 container flex flex-col lg:flex-row lg:flex-grow xl:max-w-none text-black dark:text-white m-0 min-h-screen">
       <div className="relative z-10 w-full bg-off-white dark:bg-background-dark bg-[linear-gradient(to_right,#eaeaea_1px,transparent_1px),linear-gradient(to_bottom,#eaeaea_1px,transparent_1px)] bg-[size:6rem_4rem] dark:bg-[linear-gradient(to_right,#1b1b1b_1px,transparent_1px),linear-gradient(to_bottom,#1b1b1b_1px,transparent_1px)]">
-        <div className="relative py-6 md:mt-28 flex flex-col md:flex-row">
+        <div className="relative py-6 md:mt-28 flex flex-col-reverse lg:flex-row">
           <div className="p-4 md:w-2/3 xl:pl-20">
             <TypeAnimation
               className="lg:ml-16 mb-2 flex text-center font-poppins text-5xl font-semibold text-yellow-dark sm:text-6xl"
@@ -74,36 +74,10 @@ export const HeroSection = () => {
                 </Button>
               </div>
             </div>
-            {/* <h3 className="text-2xl tracking-tighter pt-3 md:pl-16  lg:text-3xl xl:text-4xl">
-              Tech Stack:
-            </h3>
-            <div className="flex flex-row p-2 gap-x-4 bg-white shadow-lg rounded-md w-64 mx-auto md:ml-32">
-              <img
-                src="next-js.svg"
-                alt="Next JS React Framework icon"
-                width={75}
-                height={75}
-                className=""
-              />
-              <img
-                src="spring.svg"
-                alt="Spring boot JAVA Framework"
-                width={75}
-                height={75}
-                className=""
-              />
-              <img
-                src="postgresql-original-wordmark.svg"
-                alt="PostgreSQL Relational Database Management System"
-                width={75}
-                height={75}
-                className=""
-              />
-            </div> */}
           </div>
-          <div className="mx-auto rounded-xl text-center md:w-1/3 md:pr-8 lg:pr-20 max-w-md">
+          <div className="mx-auto rounded-xl text-center md:w-1/3 md:pr-8 lg:pr-20 max-w-md mb-4 lg:mb-0">
             <Image
-              src="carlosnina_photo.webp"
+              src="carlosnina_photo_blur.webp"
               alt="Carlos Nina Photo"
               width={100}
               height={100}

@@ -15,11 +15,12 @@ import {
 } from "@nextui-org/react";
 import {
   Carousel,
-  CarouselIndicator,
   CarouselMainContainer,
   CarouselNext,
   CarouselPrevious,
   SliderMainItem,
+  CarouselThumbsContainer,
+  SliderThumbItem,
 } from "@/components/ui/carousel";
 
 interface ProjectCardProps {
@@ -91,31 +92,36 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             </ModalHeader>
             <ModalBody>
               <Carousel>
-                <CarouselNext />
-                <CarouselPrevious />
-                <div className="relative">
-                  <CarouselMainContainer className="h-80">
-                    {carouselImages.map((img, index) => (
-                      <SliderMainItem
-                        key={index}
-                        className="border border-muted flex items-center justify-center h-72 rounded-md"
-                      >
+                <CarouselNext className="top-1/3 -translate-y-1/3" />
+                <CarouselPrevious className="top-1/3 -translate-y-1/3" />
+                <CarouselMainContainer className="h-80">
+                  {carouselImages.map((img, index) => (
+                    <SliderMainItem key={index} className="bg-transparent">
+                      <Image
+                        src={img}
+                        alt={`Slide ${index + 1}`}
+                        className="w-full h-full object-cover rounded-md"
+                      />
+                    </SliderMainItem>
+                  ))}
+                </CarouselMainContainer>
+                <CarouselThumbsContainer>
+                  {carouselImages.map((img, index) => (
+                    <SliderThumbItem
+                      key={index}
+                      index={index}
+                      className="bg-transparent"
+                    >
+                      <div className="outline outline-1 outline-border size-full flex items-center justify-center rounded-xl bg-background">
                         <Image
                           src={img}
                           alt={`Slide ${index + 1}`}
                           className="w-full h-full object-cover rounded-md"
                         />
-                      </SliderMainItem>
-                    ))}
-                  </CarouselMainContainer>
-                  <div className="absolute bottom-2 left-1/2 -translate-x-1/2">
-                    <div className="flex space-x-1">
-                      {carouselImages.map((_, index) => (
-                        <CarouselIndicator key={index} index={index} />
-                      ))}
-                    </div>
-                  </div>
-                </div>
+                      </div>
+                    </SliderThumbItem>
+                  ))}
+                </CarouselThumbsContainer>
               </Carousel>
               <h2 className="text-bold text-md text-xl lg:text-3xl mt-4">
                 Technologies:
@@ -126,7 +132,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
                     key={index}
                     src={tech}
                     alt={tech}
-                    className="w-30 h-30"
+                    className="w-30 h-30 max-w-[40px] max-h-[40px]"
                   />
                 ))}
               </div>
