@@ -9,9 +9,7 @@ const Sidebar = () => {
   return (
     <div className="h-full border-r border-custom-blue flex flex-col overflow-y-auto shadow-sm bg-custom-background">
       <div className="p-6">
-        <Link href="/">
-          <Logo className="rounded-xl" />
-        </Link>
+        <Link href="/">{/* <Logo className="rounded-xl" /> */}</Link>
       </div>
       <div className="flex flex-col w-full">
         <SidebarRoutes />

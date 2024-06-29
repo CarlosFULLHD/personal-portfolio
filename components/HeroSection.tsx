@@ -19,7 +19,7 @@ export const HeroSection = () => {
         <div className="relative py-6 md:mt-28 flex flex-col md:flex-row">
           <div className="p-4 md:w-2/3 xl:pl-20">
             <TypeAnimation
-              className="mb-2 flex text-center font-poppins text-5xl font-semibold text-yellow-dark sm:text-6xl"
+              className="lg:ml-16 mb-2 flex text-center font-poppins text-5xl font-semibold text-yellow-dark sm:text-6xl"
               cursor={true}
               repeat={Infinity}
               sequence={sequence}

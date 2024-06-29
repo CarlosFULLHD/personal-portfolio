@@ -135,7 +135,7 @@ function Resume(): ReactElement {
           monthPasses={monthsPassed("Jan", 2020, currentMonth, currentYear)}
         >
           <h3 className="text-2xl font-bold text-white">
-            Systems Engineering Student
+            Education: Systems Engineering Student
           </h3>
 
           <h4 className="text-xl font-semibold text-blue-dark">

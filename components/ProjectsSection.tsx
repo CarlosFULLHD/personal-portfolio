@@ -7,22 +7,20 @@ const projects = [
     image:
       "https://github.com/CarlosFULLHD/thesis_management_system/raw/main/imgs/image.png",
     shortDescription: `The Thesis Management System is designed to support both students and faculty throughout the thesis process.`,
-    fullDescription: `The Thesis Management System is designed to support both students and faculty throughout the thesis process. It includes a range of features to facilitate information dissemination, tutor management, project submissions, and progress tracking. The system ensures secure access for users and provides comprehensive tools for managing thesis-related activities.
+    fullDescription: `The Thesis Management System is designed to support both students and faculty throughout the thesis process. It includes a range of features to facilitate information dissemination, tutor management, project submissions, and progress tracking. The system ensures secure access for users and provides comprehensive tools for managing thesis-related activities. `,
 
-    Objective:
-    The Thesis Management System aims to streamline and enhance the management of the thesis process for students and faculty. It provides essential tools for communication, document management, and progress tracking to ensure a smooth and efficient thesis experience.`,
     keyPoints: [
-      "News and Announcements: Provides essential information about the thesis process and official documentation, and allows creating and publishing news with any start and end date to inform students about changes or recommendations.",
-      "Library Search Tool: Simple interface to search thesis projects within the department by keywords, authors, topics, with a usage tutorial.",
-      "Tutor Management: Provides information on available tutors, including their experience and contact details to help students choose a tutor.",
-      "Teacher Registration Management: Verifies teacher access through email and two-factor authentication to prevent identity theft.",
-      "Student Registration Management: Students can fill out a registration form reviewed by a teacher to validate if they can take the thesis course. Students can submit project proposals for review and access.",
-      "Dropout and Withdrawal Management: Students can withdraw from the course, and the coordinator can approve or reject withdrawal requests.",
-      "Thesis Proposal Review: Provides interfaces for submitting and reviewing thesis proposals, facilitating feedback between the department council and students.",
-      "Tutor and Reviewer Assignment: Helps the thesis coordinator assign tutors and reviewers to students.",
-      "Task Management and Progress Tracking: Enables virtual or in-person meetings between students and tutors, task assignments, progress tracking, and feedback with grades.",
-      "Final Document Generation: Facilitates the generation of the final document for formal defense.",
-      "User Management: Allows managing users, changing roles, and deregistering students.",
+      "News and Announcements",
+      "Library Search Tool",
+      "Tutor Management",
+      "Teacher Registration Management",
+      "Student Registration Management",
+      "Dropout and Withdrawal Management",
+      "Thesis Proposal Review",
+      "Tutor and Reviewer Assignment",
+      "Task Management and Progress Tracking",
+      "Final Document Generation",
+      "User Management",
     ],
     technologies: [
       "https://skillicons.dev/icons?i=nextjs",
@@ -49,21 +47,18 @@ const projects = [
     image:
       "https://github.com/CarlosFULLHD/JobFairPlatform/raw/main/imgs/image.png",
     shortDescription: `The Feria del Empleo UCB project is designed to support students at Universidad Católica Boliviana (UCB) in their transition from university to the workforce by connecting them with potential employers through a virtual job fair platform.`,
-    fullDescription: `The Feria del Empleo UCB project is designed to support students at Universidad Católica Boliviana (UCB) in their transition from university to the workforce by connecting them with potential employers through a virtual job fair platform. The platform allows institutions to present themselves and interact with students via video content, social media links, and Zoom meetings.
-
-    Objective:
-    The Feria del Empleo UCB aims to facilitate students' transition from university to the workforce by providing a platform for interaction with potential employers.`,
+    fullDescription: `The Feria del Empleo UCB project is designed to support students at Universidad Católica Boliviana (UCB) in their transition from university to the workforce by connecting them with potential employers through a virtual job fair platform. The platform allows institutions to present themselves and interact with students via video content, social media links, and Zoom meetings.`,
     keyPoints: [
-      "View Institutions: Students can browse all participating institutions organized by sectors.",
-      "Institution Details: Students can view detailed information about each institution, including videos, social media links, and other relevant information.",
-      "Zoom Meeting Registration: Students can register for Zoom meetings hosted by institutions, subject to availability and capacity limits.",
-      "Event Calendar: Students can view a calendar of scheduled events and Zoom meeting links.",
-      "Manage Institutions: Administrators can create and manage institution profiles, including descriptions, videos, images (with drag and drop), and social media links.",
-      "Manage Events: Administrators can create and schedule Zoom meetings, set capacity limits, and manage event details.",
+      "View Institutions",
+      "Institution Details",
+      "Zoom Meeting Registration",
+      "Event Calendar",
+      "Manage Institutions ",
+      "Manage Events",
     ],
     technologies: [
       "https://skillicons.dev/icons?i=vue",
-      "https://cdn.vuetifyjs.com/docs/images/brand-kit/v-logo-atom.svg",
+
       "https://skillicons.dev/icons?i=express",
       "https://skillicons.dev/icons?i=mysql",
     ],
@@ -145,7 +140,7 @@ export const ProjectsSection = () => {
           <h2 className="text-4xl font-bold mb-4 text-yellow-dark text-center">
             Key Projects:
           </h2>
-          <div className="grid grid-cols-1 gap-4 items-center lg:grid-cols-2 max-w-[1200px] mx-auto">
+          <div className="mx-4 grid grid-cols-1 gap-4 items-center lg:grid-cols-2 max-w-[1200px] md:mx-auto">
             {projects.map((project, index) => (
               <ProjectCard key={index} {...project} />
             ))}

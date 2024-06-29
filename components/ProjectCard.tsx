@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import {
   Card,
   CardBody,
@@ -15,10 +15,11 @@ import {
 } from "@nextui-org/react";
 import {
   Carousel,
+  CarouselIndicator,
   CarouselMainContainer,
-  CarouselThumbsContainer,
+  CarouselNext,
+  CarouselPrevious,
   SliderMainItem,
-  SliderThumbItem,
 } from "@/components/ui/carousel";
 
 interface ProjectCardProps {
@@ -45,18 +46,6 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   demoLink,
 }) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
-  const [isImageModalOpen, setImageModalOpen] = useState(false);
-  const [selectedImage, setSelectedImage] = useState("");
-
-  const openImageModal = (img: string) => {
-    setSelectedImage(img);
-    setImageModalOpen(true);
-  };
-
-  const closeImageModal = () => {
-    setSelectedImage("");
-    setImageModalOpen(false);
-  };
 
   return (
     <div>
@@ -65,7 +54,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
         isPressable
         onClick={onOpen}
       >
-        <CardBody className="p-0">
+        <CardBody className="p-0 overflow-hidden">
           <Image
             width="100%"
             alt={title}
@@ -97,57 +86,55 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
       >
         <ModalContent>
           <>
-            <ModalHeader>{title}</ModalHeader>
+            <ModalHeader className="text-3xl text-yellow-dark">
+              {title}
+            </ModalHeader>
             <ModalBody>
-              <Carousel orientation="horizontal">
-                <CarouselMainContainer className="h-80">
-                  {carouselImages.map((img, index) => (
-                    <SliderMainItem
-                      key={index}
-                      className="border border-muted flex items-center justify-center h-72 rounded-md"
-                    >
-                      <Image
-                        src={img}
-                        alt={`Slide ${index + 1}`}
-                        className="w-full h-full object-cover rounded-md"
-                        onClick={() => openImageModal(img)}
-                      />
-                    </SliderMainItem>
-                  ))}
-                </CarouselMainContainer>
-                <CarouselThumbsContainer className="h-20">
-                  {carouselImages.map((img, index) => (
-                    <SliderThumbItem
-                      key={index}
-                      index={index}
-                      className="rounded-md bg-transparent"
-                    >
-                      <span className="border border-muted flex items-center justify-center h-full w-full rounded-md cursor-pointer bg-background">
+              <Carousel>
+                <CarouselNext />
+                <CarouselPrevious />
+                <div className="relative">
+                  <CarouselMainContainer className="h-80">
+                    {carouselImages.map((img, index) => (
+                      <SliderMainItem
+                        key={index}
+                        className="border border-muted flex items-center justify-center h-72 rounded-md"
+                      >
                         <Image
                           src={img}
                           alt={`Slide ${index + 1}`}
                           className="w-full h-full object-cover rounded-md"
-                          onClick={() => openImageModal(img)}
                         />
-                      </span>
-                    </SliderThumbItem>
-                  ))}
-                </CarouselThumbsContainer>
+                      </SliderMainItem>
+                    ))}
+                  </CarouselMainContainer>
+                  <div className="absolute bottom-2 left-1/2 -translate-x-1/2">
+                    <div className="flex space-x-1">
+                      {carouselImages.map((_, index) => (
+                        <CarouselIndicator key={index} index={index} />
+                      ))}
+                    </div>
+                  </div>
+                </div>
               </Carousel>
-              <h2 className="text-bold text-md mt-4">Technologies:</h2>
+              <h2 className="text-bold text-md text-xl lg:text-3xl mt-4">
+                Technologies:
+              </h2>
               <div className="flex space-x-2">
                 {technologies.map((tech, index) => (
                   <Image
                     key={index}
                     src={tech}
                     alt={tech}
-                    className="w-10 h-10"
+                    className="w-30 h-30"
                   />
                 ))}
               </div>
-              <p>{fullDescription}</p>
-              <h3 className="mt-4 mb-2 font-bold">Key Features:</h3>
-              <ul className="list-disc ml-5">
+              <p className="text-xl">{fullDescription}</p>
+              <h3 className="mt-4 mb-2 font-bold text-xl lg:text-3xl">
+                Key Features:
+              </h3>
+              <ul className="list-disc ml-5 text-xl lg:text-2xl">
                 {keyPoints.map((point, index) => (
                   <li key={index}>{point}</li>
                 ))}
@@ -171,7 +158,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
               >
                 Github
               </Button>
-              <Button
+              {/* <Button
                 className="font-bold text-md"
                 as={Link}
                 href={demoLink}
@@ -179,35 +166,9 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
                 color="primary"
               >
                 Demo
-              </Button>
+              </Button> */}
             </ModalFooter>
           </>
-        </ModalContent>
-      </Modal>
-
-      <Modal
-        isOpen={isImageModalOpen}
-        onOpenChange={closeImageModal}
-        size="full"
-      >
-        <ModalContent>
-          <ModalBody className="flex justify-center items-center">
-            <Image
-              src={selectedImage}
-              alt="Full Resolution"
-              className="w-full h-full object-cover"
-            />
-          </ModalBody>
-          <ModalFooter>
-            <Button
-              className="font-bold w-20 h-10"
-              color="danger"
-              variant="solid"
-              onClick={closeImageModal}
-            >
-              Close
-            </Button>
-          </ModalFooter>
         </ModalContent>
       </Modal>
     </div>
