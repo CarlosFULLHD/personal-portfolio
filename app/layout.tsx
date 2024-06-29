@@ -1,3 +1,4 @@
+// app/layout.tsx
 import "@/styles/globals.css";
 import { Metadata } from "next";
 import { siteConfig } from "@/config/site";
@@ -25,6 +26,36 @@ export const metadata: Metadata = {
     shortcut: "/favicon.png",
     apple: "/favicon.png",
   },
+  openGraph: {
+    type: "website",
+    url: "https://carlitosnina.com",
+    title: "Carlos Nina's Portfolio",
+    description:
+      "Explore the diverse and impactful projects of Carlos Nina, a Junior Full Stack Developer proficient in Next.js, Spring Boot, and microservices. My portfolio includes transformative projects like the thesis management system and Job Fair Platform. ",
+    images: [
+      {
+        url: "/opengraph-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Carlos Nina's Portfolio",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@yourtwitterhandle",
+    title: "Carlos Nina's Portfolio",
+    description:
+      "Explore the diverse and impactful projects of Carlos Nina, a Junior Full Stack Developer proficient in Next.js, Spring Boot, and microservices. My portfolio includes transformative projects like the thesis management system and Job Fair Platform. ",
+    images: [
+      {
+        url: "/opengraph-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Carlos Nina's Portfolio",
+      },
+    ],
+  },
 };
 
 export default function RootLayout({
@@ -42,14 +73,13 @@ export default function RootLayout({
         style={{ zIndex: 0 }}
       >
         <Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>
-          <div className="elative flex flex-col  h-full dark:bg-black-50">
+          <div className="relative flex flex-col  h-full dark:bg-black-50">
             <div className="h-12 md:h-10 lg:h-12 xl:h-14 fixed inset-y-0 w-full z-40 bg-custom-background dark:bg-blue-25">
-              <div className=" pl-6 md:p-4 border-b h-full flex items-center shadow-sm z-50 bg-custom-background text-white">
+              <div className="pl-6 md:p-4 border-b h-full flex items-center shadow-sm z-50 bg-custom-background text-white">
                 <MobileSidebar />
                 <Navbar />
               </div>
             </div>
-
             <main className="relative bg-custom-background mt-10">
               {children}
             </main>

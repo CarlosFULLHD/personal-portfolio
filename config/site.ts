@@ -1,7 +1,7 @@
 export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
-name: "Portfolio",
-description: "Junior Full Stack Developer Carlos Nina - Next JS - Spring Boot, currently living in Bolivia. I'm proactive, competitive, and always eager to learn. I love tackling challenges and often teach myself new technologies. Currently, I am learning Keycloak and applying Spring Boot with microservices in my Thesis."
+name: "Carlos Nina's Portfolio",
+description: "Discover the work of Carlos Nina, a Junior Full Stack Developer specializing in Next.js, Spring Boot, and microservices. Based in Bolivia, Carlos is proactive, competitive, and constantly learning new technologies."
 };
 
