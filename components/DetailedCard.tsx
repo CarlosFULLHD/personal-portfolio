@@ -1,5 +1,5 @@
 import React from "react";
-import { Card, CardHeader, CardBody } from "@nextui-org/react";
+import { Accordion, AccordionItem } from "@nextui-org/react";
 
 // Define una interfaz para las props de tu componente
 interface DetailedCardProps {
@@ -22,14 +22,23 @@ export default function DetailedCard({
     .filter((item) => item);
 
   return (
-    <Card className="py-4 bg-background-darker text-white rounded-xl mb-2 mx-2 ">
-      <CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
-        <div className="flex items-center mb-2">
+    <Accordion
+      variant="splitted"
+      className="bg-background-darker text-white rounded-xl mb-2 mx-2"
+    >
+      <AccordionItem
+        key={title}
+        aria-label={title}
+        title={title}
+        startContent={
           <img
             src={icon}
             alt={title}
             className="bg-white rounded-md p-1 w-12 h-12 mr-2"
           />
+        }
+      >
+        <div className="flex items-center mb-2">
           <h1 className="font-bold text-2xl">{title}</h1>
         </div>
         <p className="text-xl font-normal mb-2">{description}</p>
@@ -40,7 +49,7 @@ export default function DetailedCard({
             </li>
           ))}
         </ul>
-      </CardHeader>
-    </Card>
+      </AccordionItem>
+    </Accordion>
   );
 }

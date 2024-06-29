@@ -101,8 +101,8 @@ const Learning = [
 
 export const ModulesSection = () => {
   return (
-    <section className="m-0 lg:w-full ">
-      <h2 className="text-4xl lg:text-5xl font-bold text-center mb-4  text-yellow-dark px-4">
+    <section id="skills" className="m-0 lg:w-full ">
+      <h2 className="text-4xl lg:text-5xl font-bold text-center mb-4 text-yellow-dark px-4">
         Technical skills:
       </h2>
       <div className="mx-auto max-w-[1024px] lg:max-w-6xl p-1 sm:p-2 md:p-4 lg:p-8 rounded-lg">
