@@ -130,6 +130,115 @@ const projects = [
     githubLink: "https://github.com/CarlosFULLHD/iot_garaje_inteligente",
     demoLink: "https://smartpark.demo.com",
   },
+  {
+    title:
+      "Intelligent Parking Management System with Microservices - Spring Boot - Cloud",
+    image:
+      "https://github.com/CarlosFULLHD/spring-microservices/raw/main/imgs/1.jpg",
+    shortDescription:
+      "Optimize parking space management using IoT and AI to reduce search time, minimize traffic congestion, and decrease environmental impact.",
+    fullDescription: `
+      The Intelligent Parking Management System aims to optimize parking space management in urban areas using IoT technologies and AI algorithms. The project reduces the time spent searching for parking spots, minimizes traffic congestion, and decreases environmental impact through the use of sensors and voice recognition.
+    `,
+    keyPoints: [
+      "Centralized configuration management with Config Server",
+      "Service discovery and registration with Eureka Server",
+      "Routing client requests with API Gateway",
+      "Management of parking lots, users, reservations, and memberships with microservices",
+    ],
+    technologies: [
+      "https://skillicons.dev/icons?i=spring",
+      "https://skillicons.dev/icons?i=docker",
+      "https://skillicons.dev/icons?i=postgresql",
+      "https://skillicons.dev/icons?i=java",
+    ],
+    carouselImages: [
+      "https://github.com/CarlosFULLHD/spring-microservices/raw/main/imgs/1.jpg",
+      "https://github.com/CarlosFULLHD/spring-microservices/raw/main/imgs/2.jpg",
+      "https://github.com/CarlosFULLHD/spring-microservices/raw/main/imgs/3.jpg",
+      "https://github.com/CarlosFULLHD/spring-microservices/raw/main/imgs/4.jpg",
+      "https://github.com/CarlosFULLHD/spring-microservices/raw/main/imgs/5.jpg",
+    ],
+    githubLink: "https://github.com/CarlosFULLHD/spring-microservices",
+    demoLink: "",
+  },
+  {
+    title: "Landing Page with Next JS",
+    image:
+      "https://github.com/CarlosFULLHD/personal-webpage/raw/main/readme-imgs/image-1.png",
+    shortDescription:
+      "A comprehensive platform for promoting and selling the 'Libertad Digital' course with features enhancing user engagement and conversions.",
+    fullDescription: `
+      This landing page is designed to provide a comprehensive platform for promoting and selling the 'Libertad Digital' course. The site includes various features aimed at enhancing user engagement and driving conversions, following the principles outlined in Alex Hormozi's '100M Offers' and Russell Branson's 'Dotcom Secrets.'
+    `,
+    keyPoints: [
+      "Interactive Pop-Ups for targeted messaging",
+      "Author Section for social validation",
+      "Course Points and Features breakdown",
+      "Bonuses Section to add value",
+      "Product Comparison Section for clear advantages",
+      "FAQs Section to address common questions",
+      "Guarantee for user security",
+      "Checkout page integration",
+      "Contact Modal for collaboration",
+      "Form for quizzes and feedback",
+      "Newsletter Page for subscriptions",
+    ],
+    technologies: [
+      "https://skillicons.dev/icons?i=nextjs",
+      "https://skillicons.dev/icons?i=tailwind",
+      "https://skillicons.dev/icons?i=vercel",
+      "https://skillicons.dev/icons?i=aws",
+    ],
+    carouselImages: [
+      "https://github.com/CarlosFULLHD/personal-webpage/raw/main/readme-imgs/image-1.png",
+      "https://github.com/CarlosFULLHD/personal-webpage/raw/main/readme-imgs/image-2.png",
+      "https://github.com/CarlosFULLHD/personal-webpage/raw/main/readme-imgs/image-5.png",
+      "https://github.com/CarlosFULLHD/personal-webpage/raw/main/readme-imgs/image-6.png",
+      "https://github.com/CarlosFULLHD/personal-webpage/raw/main/readme-imgs/image-7.png",
+      "https://github.com/CarlosFULLHD/personal-webpage/raw/main/readme-imgs/image-8.png",
+      "https://github.com/CarlosFULLHD/personal-webpage/raw/main/readme-imgs/image-9.png",
+      "https://github.com/CarlosFULLHD/personal-webpage/raw/main/readme-imgs/image-10.png",
+    ],
+    githubLink: "https://github.com/CarlosFULLHD/personal-webpage",
+    demoLink: "",
+  },
+  {
+    title: "Studio Cuisine Restaurant Menu Project",
+    image:
+      "https://github.com/CarlosFULLHD/Proyecto-Sis-Info/raw/master/imgs/image.png",
+    shortDescription:
+      "Interactive virtual menu for customers and management platform for Studio Cuisine restaurants.",
+    fullDescription: `
+      Studio Cuisine is a restaurant that manages different lines of food within a dark kitchen, including Combi (fast food), Máito Chifa (Peruvian Chifa), Lego Burger (customized burgers), Salchipapus (salchipapas), and Pocho el Pollo (fried chicken). This project provides a website for users to explore menus, place orders, and for administrators to manage products and orders.
+    `,
+    keyPoints: [
+      "Interactive virtual menu for various food lines",
+      "Order placement and management",
+      "User and admin registration and management",
+      "Shopping cart for order review and modification",
+    ],
+    technologies: [
+      "https://skillicons.dev/icons?i=docker",
+      "https://skillicons.dev/icons?i=mysql",
+      "https://skillicons.dev/icons?i=flask",
+      "https://skillicons.dev/icons?i=python",
+    ],
+    carouselImages: [
+      "https://github.com/CarlosFULLHD/Proyecto-Sis-Info/raw/master/imgs/image.png",
+      "https://github.com/CarlosFULLHD/Proyecto-Sis-Info/raw/master/imgs/image-1.png",
+      "https://github.com/CarlosFULLHD/Proyecto-Sis-Info/raw/master/imgs/image-2.png",
+      "https://github.com/CarlosFULLHD/Proyecto-Sis-Info/raw/master/imgs/image-3.png",
+      "https://github.com/CarlosFULLHD/Proyecto-Sis-Info/raw/master/imgs/image-4.png",
+      "https://github.com/CarlosFULLHD/Proyecto-Sis-Info/raw/master/imgs/image-5.png",
+      "https://github.com/CarlosFULLHD/Proyecto-Sis-Info/raw/master/imgs/image-6.png",
+      "https://github.com/CarlosFULLHD/Proyecto-Sis-Info/raw/master/imgs/image-7.png",
+      "https://github.com/CarlosFULLHD/Proyecto-Sis-Info/raw/master/imgs/image-8.png",
+      "https://github.com/CarlosFULLHD/Proyecto-Sis-Info/raw/master/imgs/image-9.png",
+    ],
+    githubLink: "https://github.com/CarlosFULLHD/Proyecto-Sis-Info",
+    demoLink: "",
+  },
 ];
 
 export const ProjectsSection = () => {
