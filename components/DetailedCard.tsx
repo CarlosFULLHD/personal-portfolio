@@ -22,10 +22,7 @@ export default function DetailedCard({
     .filter((item) => item);
 
   return (
-    <Accordion
-      variant="splitted"
-      className="bg-background-darker text-white rounded-xl mb-2 mx-2"
-    >
+    <Accordion variant="splitted" className=" text-white rounded-xl mb-2">
       <AccordionItem
         key={title}
         aria-label={title}

@@ -89,13 +89,11 @@ const devopsCards = [
 const Learning = [
   {
     id: 10,
-    title: "React Query, Spring Cloud, Keycloak, Figma",
-    icon: "keycloak.svg",
+    title: "React Query, Spring Cloud",
+    icon: "https://media.dev.to/cdn-cgi/image/width=1080,height=1080,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fh3f26p0bsp79ayvkv8k4.png",
     description: "",
     lists: `- React Query: State and cache management library for React.js
-- Spring Cloud
-- Keycloak: Security and authentication
-- Figma: Web design and styling`,
+- Spring Cloud`,
   },
 ];
 

@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import Image from "next/image";
 import { Button } from "@nextui-org/react";
@@ -35,12 +36,12 @@ export const HeroSection = () => {
               I have successfully led and contributed to multiple projects,
               earning commendations for performance and innovation.
             </h2>
-            <div className="flex flex-col items-center lg:flex-row lg:justify-center lg:items-center lg:gap-10 lg:w-full mt-8 lg:ml-16 ">
+            <div className="flex flex-col items-center lg:flex-row lg:justify-start lg:items-center lg:gap-x-10 lg:w-full mt-8 lg:ml-16 ">
               <Button
                 as="a"
                 href="\CurriculumVitae_CarlosNina.pdf"
                 download
-                className="w-full md:w-auto text-2xl font-bold bg-white dark:bg-background-darker hover:bg-gray-100 dark:hover:bg-gray-700 shadow-lg text-black dark:text-white py-4 px-6 lg:px-10 flex items-center justify-center relative transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110"
+                className="w-full md:w-auto text-2xl font-bold bg-white dark:bg-background-darker hover:bg-gray-100 dark:hover:bg-gray-700 shadow-lg text-black dark:text-white py-4 px-6 lg:px-10 flex items-center justify-center relative transition ease-in-out delay-0 hover:-translate-y-1 hover:scale-110"
               >
                 CV
               </Button>
@@ -49,7 +50,7 @@ export const HeroSection = () => {
                   as="a"
                   href="https://github.com/CarlosFULLHD"
                   target="_blank"
-                  className="w-full md:w-auto text-2xl font-bold bg-white dark:bg-background-darker hover:bg-gray-100 dark:hover:bg-gray-700 shadow-lg text-black dark:text-white py-4 px-6 lg:px-10 flex items-center justify-center relative transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110"
+                  className="w-full md:w-auto text-2xl font-bold bg-white dark:bg-background-darker hover:bg-gray-100 dark:hover:bg-gray-700 shadow-lg text-black dark:text-white py-4 px-6 lg:px-10 flex items-center justify-center relative transition ease-in-out delay-0 hover:-translate-y-1 hover:scale-110"
                 >
                   <img
                     src="https://skillicons.dev/icons?i=github"
@@ -61,7 +62,7 @@ export const HeroSection = () => {
                   as="a"
                   href="https://www.linkedin.com/in/carlos-nina-reynaga/"
                   target="_blank"
-                  className="w-full md:w-auto text-2xl font-bold bg-white dark:bg-background-darker hover:bg-gray-100 dark:hover:bg-gray-700 shadow-lg text-black dark:text-white py-4 px-6 lg:px-10 flex items-center justify-center relative transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110"
+                  className="w-full md:w-auto text-2xl font-bold bg-white dark:bg-background-darker hover:bg-gray-100 dark:hover:bg-gray-700 shadow-lg text-black dark:text-white py-4 px-6 lg:px-10 flex items-center justify-center relative transition ease-in-out delay-0 hover:-translate-y-1 hover:scale-110"
                 >
                   <img
                     src="https://skillicons.dev/icons?i=linkedin"
@@ -107,8 +108,10 @@ export const HeroSection = () => {
               className="w-full max-w-xs md:max-w-full aspect-square object-cover rounded-xl"
             />
           </div>
+        </div>
+        <div className="w-10 mx-auto lg:mt-12 xl:mt-20">
           <button
-            className="absolute bottom-0 h-12 text-white hover:text-primary"
+            className="  h-12 text-white hover:text-primary"
             onClick={() => scrollIntoView("skills")}
           >
             <FaChevronDown className="animate-fade-in-down text-xl" />
