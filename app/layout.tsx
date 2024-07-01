@@ -12,6 +12,7 @@ import { MobileSidebar } from "@/components/common/MobileSidebar";
 import Sidebar from "@/components/common/Sidebar";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://carlitosnina.com"),
   title: {
     default: siteConfig.name,
     template: `%s - ${siteConfig.name}`,
