@@ -83,7 +83,7 @@ function Resume(): ReactElement {
         </TimelineItem>
 
         <TimelineItem
-          date="Sep 2023 - Dec 2023"
+          date="Mar 2023 - Jun 2023"
           icon={renderCompanyLogo("UCB")}
           monthPasses={monthsPassed("Sep", 2023, "Dec", 2023)}
         >
