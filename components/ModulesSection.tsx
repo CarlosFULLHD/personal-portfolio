@@ -3,15 +3,43 @@ import DetailedCard from "./DetailedCard";
 const frontendCards = [
   {
     id: 1,
-    title: "Next.js, React.js, TypeScript",
+    title: "Next.js, React.js",
     icon: "next-js.svg",
     description:
-      "Extensive experience in building dynamic web applications using Next.js, React.js, and TypeScript. Proficient in consuming REST API endpoints, managing state, and modularizing code for better maintainability and scalability.",
+      "Extensive experience in building dynamic web applications using Next.js, React.js withTypeScript. ",
     lists: `
-      - Projects: Thesis Management System, Job Fair Platform
+      - Projects: Thesis Management System, Landing page with Next js, (this Portfolio) 
       - Consuming REST API endpoints
       - State management
       - Code Modularization
+      - JWT + RBAC
+      - Session management
+    `,
+  },
+  {
+    id: 2,
+    title: "Vue.js",
+    icon: "vue-js.svg",
+    description:
+      "Proficient in developing user interfaces using Vue.js 2 and 3. Experienced in building scalable and maintainable web applications",
+    lists: `
+      - Projects: Job Fair Platform
+      - Vue.js 2 and 3
+      - Consuming REST API endpoints
+      - State management with Pinia
+    `,
+  },
+  {
+    id: 3,
+    title: "TypeScript",
+    icon: "typescript.svg",
+    description:
+      "Solid understanding of TypeScript for enhancing JavaScript with static types. Experienced in integrating TypeScript with both React and Vue.js, improving code quality and maintainability. Proficient in using TypeScript for type safety, interfaces, and generics.",
+    lists: `
+      - Basic TypeScript integration
+      - Type safety and interfaces
+      - Usage in React and Vue.js projects
+      - Improving code quality and maintainability
     `,
   },
   {
@@ -30,7 +58,7 @@ const frontendCards = [
 
 const backendCards = [
   {
-    id: 2,
+    id: 5,
     title: "Spring Boot (Java)",
     icon: "spring.svg",
     description:
@@ -71,8 +99,21 @@ const devopsCards = [
       - Deployments on Tomcat and Netlify
     `,
   },
+
   {
     id: 9,
+    title: "AWS",
+    icon: "aws-svgrepo-com.svg",
+    description:
+      "Experience in using AWS services for enhancing backend functionality, scalability, and reliability. Skilled in deploying and managing applications using various AWS tools and services.",
+    lists: `
+      - Amazon S3: Storing and retrieving data with high durability and availability
+      - Amazon Aurora: Managing SQL databases with enhanced performance and availability
+      - CloudFront CDN: Distributing content globally with low latency
+    `,
+  },
+  {
+    id: 10,
     title: "Deployments",
     icon: "server-minimalistic-svgrepo-com.svg",
     description:
@@ -152,7 +193,7 @@ export const ModulesSection = () => {
             ))}
           </div>
         </div>
-        <div className="mb-8">
+        {/* <div className="mb-8">
           <h2 className="text-3xl font-bold mb-4 lg:text-3xl text-yellow-dark px-4">
             Currently Learning:
           </h2>
@@ -167,7 +208,7 @@ export const ModulesSection = () => {
               />
             ))}
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );

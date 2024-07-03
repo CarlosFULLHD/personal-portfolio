@@ -29,11 +29,12 @@ export const HeroSection = () => {
             <h2 className="text-2xl tracking-tighter pt-3 md:pl-16 lg:text-3xl xl:text-4xl">
               I'm a{" "}
               <span className="text-yellow-dark">Full Stack Developer </span>
-              passionate about React, Spring Boot, and Next.js. I have developed
-              several impactful projects for the Bolivian Catholic University
-              (UCB), focusing on innovative systems that enhance academic and
-              administrative efficiency. I thrive on solving complex problems
-              and am dedicated to continuous learning and professional growth.
+              passionate about Vue.js, React.js and Spring Boot. I have
+              developed several impactful projects for the Bolivian Catholic
+              University (UCB), focusing on innovative systems that enhance
+              academic and administrative efficiency. I thrive on solving
+              complex problems and am dedicated to continuous learning and
+              professional growth.
             </h2>
             <div className="lg:ml-20 xl:ml-0 flex flex-col items-center lg:flex-row lg:justify-center lg:items-center lg:gap-10 lg:w-full mt-8">
               <Button
